@@ -1,0 +1,342 @@
+﻿@using HarputGayriMenkul.Models;
+
+@model HarputGayriMenkul.Models.Advert
+
+@{
+    ViewBag.Title = "AdvertInfo";
+    Layout = "~/Views/Shared/_AdminAnasayfaLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="tr">
+
+
+<head>
+    @section Head{
+        <meta charset="utf-8" />
+        <style>
+            .field-validation-error {
+                color: Red;
+            }
+
+            .validation-summary-errors {
+                font-weight: bold;
+                color: Red;
+            }
+
+            .table-ozellik {
+                width: initial;
+                height: auto;
+            }
+
+            .sec {
+                width: 20px;
+            }
+
+            .isim {
+                width: 170px;
+            }
+        </style>
+
+    }
+
+    <title>İlan Ekle
+    </title>
+</head>
+
+<body>
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <legend>Advert</legend>
+            <div class="portlet box green">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-gift"></i>İlan Ekleme Formu
+                    </div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse"></a>
+                        <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                        <a href="javascript:;" class="reload"></a>
+                        <a href="javascript:;" class="remove"></a>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                    <!-- BEGIN FORM-->
+
+                    @using (Html.BeginForm("AdvertInfo", "AdvertTransaction", FormMethod.Post, new { @class = "form-body" }))
+                    {
+@*<form class="form-horizontal" action="/Admin/AdvertIns" method="post">*@
+
+                        <div class="form-body">
+                            <h3 class="form-section">İlan Bilgileri</h3>
+                            <div id="post" class="listingborder nine columns alpha shadowonleft">
+                    <div class="inside_post inside_no_border">
+
+
+                        <div class="anchor-bord">
+                            <ul>
+                                <li><a href="#prop_des">Description</a>
+                                </li>
+
+                                <li><a href="#prop_det">Details</a>
+                                </li>
+
+                                <li><a href="#prop_ame">Features</a>
+                                </li>
+
+                                <li><a href="#prop_inq">Enquires</a>
+                                </li>
+
+                                <li><a href="#comment">Similar Listings</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="thumbs_row">
+                            <div class="google_icons">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/google-map-thumb.jpg" class="gthumb" id="gmap" data-tip="gmap" alt="google-map-thumb" onclick="closeStreetView();" /><img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/google-place-thumb.jpg" class="gthumb" id="gview" data-tip="gview" alt="google-map-thumb" onclick="toggleStreetView();" /></div>
+                            <div class="image_thumbs_row">
+                                <div class="video_thumb" id="play_video" style="background-image: url(~/Content/EmlakPages/wpestatetheme.org/../i.vimeocdn.com/video/160609628_200x150.jpg);" data-video_data="vimeo" data-video_id="24492485">
+                                    <span class="video_play_prop"></span>
+                                </div>
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/WPEstate017-136x68.jpg" alt="slider-thumb" data-tip="imag" class="current-thumb" data-original="http://wpestatetheme.org/wp-content/uploads/2013/05/WPEstate017.jpg" data-full="http://wpestatetheme.org/wp-content/uploads/2013/05/WPEstate017-1600x590.jpg" /><img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/WPEstateImageAfter114-136x68.jpg" alt="slider" data-tip="imag" data-original="http://wpestatetheme.org/wp-content/uploads/2013/05/WPEstateImageAfter114.jpg" data-full="http://wpestatetheme.org/wp-content/uploads/2013/05/WPEstateImageAfter114-1600x590.jpg" /><img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/WPEstate1873-136x68.jpg" alt="slider" data-tip="imag" data-original="http://wpestatetheme.org/wp-content/uploads/2013/05/WPEstate1873.jpg" data-full="http://wpestatetheme.org/wp-content/uploads/2013/05/WPEstate1873-1600x590.jpg" />
+                            </div>
+                        </div>
+                        <div class="blankpin rentalspin"></div>
+
+
+
+                        <!-- start  sixprop content container-->
+                        <div class="sixprop propcol">
+                            <h1 class="entry-title-prop">Offices in Southwark</h1>
+                            <div class="under-title">
+                                USD 15,000                                                    
+                            </div>
+
+
+
+
+
+
+
+                            <div class="under-title-addres" id="prop_des">
+                                Great Dover St 2, <a href="~/Content/EmlakPages/wpestatetheme.org/property_city/london/index.html" rel="tag">London</a>
+                            </div>
+
+
+                            <div class="mobilenav">
+                                <span class="prev_prop"><a href="../steel-factory-in-new-york/index.html" rel="prev"></a></span>
+                                <span class="next_prop"><a href="../special-offer-brooklyn-ny/index.html" rel="next"></a></span>
+                            </div>
+
+
+
+
+                            <div class="property_description">
+                                <h4>Property Description</h4>
+                                <p>Former high end beach home converted to Class “A” office space. 2519 sq ft complete with three and 1/2 baths. Large eat in kitchen/conference area. Many storage areas and closets. Currently used as 10 offices with large reception area. Fully wired with Cat 5 wiring to all, phone room. Exterior storage and parking spaces for 12 cars. Huge frontage on 30-A and award winning landscaping. Great opportunity to have a landmark location on Scenic 30-A with over 200′ of 30-A frontage.</p>
+                            </div>
+                            <hr class="dottedline">
+                            <h4 id="prop_det">Property Details                        </h4>
+                            <div class="prop_details">
+                                <ul>
+                                    <li><span class="title_feature_listing">Price: </span>USD 15,000 </li>
+                                    <li><span class="title_feature_listing">Address: </span>Great Dover St 2</li>
+                                    <li><span class="title_feature_listing">City: </span><a href="~/Content/EmlakPages/wpestatetheme.org/property_city/london/index.html" rel="tag">London</a></li>
+                                    <li><span class="title_feature_listing">Area: </span><a href="~/Content/EmlakPages/wpestatetheme.org/property_area/southwark/index.html" rel="tag">Southwark</a></li>
+                                    <li><span class="title_feature_listing">County: </span>London</li>
+                                    <li><span class="title_feature_listing">State: </span>London</li>
+                                    <li><span class="title_feature_listing">Zip: </span>566844</li>
+                                    <li><span class="title_feature_listing">Country: </span>United Kingdom</li>
+                                </ul>
+                            </div>
+
+
+
+                            <div class="prop_details">
+                                <ul>
+
+                                    <li><span class="title_feature_listing">Property Size: </span>150 square feet</li>
+                                    <li><span class="title_feature_listing">Property Lot Size: </span>700 square feet</li>
+                                    <li><span class="title_feature_listing">Rooms: </span>10</li>
+                                    <li><span class="title_feature_listing">Bathrooms: </span>2</li>
+                                </ul>
+                            </div>
+
+                            <!--Custom Properties -->
+                            <div class="prop_details_custom">
+                                <p><span class="title_feature_listing">Year Built: </span>2005</p>
+                                <p><span class="title_feature_listing">Garages: </span>300</p>
+                                <p><span class="title_feature_listing">Basement: </span>yes</p>
+                                <p><span class="title_feature_listing">External Construction: </span>300 parking spaces</p>
+                                <p><span class="title_feature_listing">Roofing: </span>new</p>
+                                <p><span class="title_feature_listing">Available From: </span>2013-05-28</p>
+                            </div>
+
+
+
+
+
+
+
+
+                            <h4 id="prop_ame">Property Features                        </h4>
+
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />attic</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />gas heat</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />ocean view</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />wine cellar</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />basketball court</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />gym</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />pound</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />fireplace</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />lake view</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />pool</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />back yard</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />front yard</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />fenced yard</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />sprinklers</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />washer and dryer</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />deck</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />balcony</div>
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />laundry</div>
+
+
+
+
+
+
+                            <div class="properties_agent_notes">
+                                <h4>Agent Notes</h4>
+                                All expenses except phone and internet are included. Large open space with vaulted ceilings and tall windows. Also includes: 1 small office, a very convenient break room, and supplies room.
+                            </div>
+                            <hr class="dottedline bottom-estate_property">
+
+                            <div class="agent_listing-prop agent_bottom_border">
+                                <div class="featured_agent_image" data-agentlink="http://wpestatetheme.org/agents/janet-richmond/" style="background-image: url('~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/ProfilePhoto33-120x120.jpg');">
+                                    <div class="featured_agent_image_hover">
+                                        <span>Janet Richmond</span>
+                                    </div>
+                                </div>
+                                <div class="agent_listing_prop_details" id="prop_inq">
+                                    <h3><a href="~/Content/EmlakPages/wpestatetheme.org/agents/janet-richmond/index.html">Janet Richmond</a></h3>
+                                    <div class="agent_title">selling agent</div>
+                                    <div class="agent_detail"><a href="tel:M. 888-568-8452">M. 888-568-8452</a></div>
+                                    <div class="agent_detail"><a href="mailto:janet@wpestatetheme.org">janet@wpestatetheme.org</a></div>
+                                    <div class="agent_detail">Skype: janet.richmond</div>
+                                    <input name="prop_id" type="hidden" id="agent_property_id" value="237">
+                                    <div class="my_other">
+                                        <div class="btn listing agentbut listinglink"><a href="~/Content/EmlakPages/wpestatetheme.org/agents/janet-richmond/index.html"><span class="agent_plus">+ </span>my listings</a></div>
+                                    </div>
+
+                                </div>
+                                <!--Code for property listing -->
+                                <h4>Contact Me</h4>
+                                <div class="agent_contanct_form">
+
+                                    <div class="alert-box error">
+                                        <div class="alert-message" id="alert-agent-contact"></div>
+                                    </div>
+
+
+                                    <input name="contact_name" id="agent_contact_name" type="text" placeholder="Your Name">
+                                    <input type="text" name="email" id="agent_user_email" placeholder="Your Email">
+                                    <input type="text" name="phone" id="agent_phone" placeholder="Your Phone">
+                                    <textarea id="agent_comment" name="comment" cols="45" rows="8" placeholder="Your Message"></textarea>
+                                    <input name="submit" type="submit" id="agent_submit" value="Send Message" class="btn small white">
+                                    <input name="agent_email" type="hidden" id="agent_email" value="janet@wpestatetheme.org">
+
+                                    <input type="hidden" name="contact_ajax_nonce" id="agent_property_ajax_nonce" value="0081aa4933" />
+
+                                </div>
+                                <!--end agent_contanct_form -->
+                            </div>
+
+
+                            <div class="related_listings bottom-estate_property">
+                                <h2 id="comment">Similar Listings</h2>
+                                <div class="four columns  alpha">
+                                    <figure>
+                                        <a href="../office-space-590-central-ave/index.html" class="listing_image">
+                                            <img width="980" height="777" src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/WPEstateMourgueFile3313-980x777.jpg" class="lazyload wp-post-image" alt="WPEstateMourgueFile3313" data-original="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/WPEstateMourgueFile3313-980x777.jpg" /></a>
+                                        <a href="../office-space-590-central-ave/index.html">
+                                            <div class="ribbon-wrapper-default ribbon-wrapper-open-house">
+                                                <div class="ribbon-inside open-house">open house</div>
+                                            </div>
+                                        </a>
+                                        <figcaption data-link="../office-space-590-central-ave/index.html">
+                                            <span class="fig-icon"></span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="property_listing_details">
+                                        <h3 class="listing_title"><a href="../office-space-590-central-ave/index.html">Office Space Central Ave</a></h3>
+
+                                        <span class="property_price">USD 16,000 </span>
+                                        <div class="article_property_type">Bowers Street, <a href="~/Content/EmlakPages/wpestatetheme.org/property_city/jersey-city/index.html" rel="tag">Jersey City</a> </div>
+
+                                        <div class="article_property_type">
+                                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_category/offices/index.html" rel="tag">Offices</a> in  
+                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_action_category/rentals/index.html" rel="tag">Rentals</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <span id="menu_stopper"></span>
+
+
+
+
+                        </div>
+                        <!-- end sixprop content container-->
+
+
+                        <!-- start fixed sidebar-->
+                        <div class="twoprop propcol">
+                            <span class="prev_prop"><a href="../steel-factory-in-new-york/index.html" rel="prev"></a></span>
+                            <span class="next_prop"><a href="../special-offer-brooklyn-ny/index.html" rel="next"></a></span>
+                            <div id="add_favorites" class="isnotfavorite" data-postid="237">add to favorites</div>
+                        </div>
+                        <!-- end fixed sidebar-->
+
+
+
+                    </div>
+                    <!-- end inside-->
+                </div>
+                            </div>
+
+                        
+                    }
+                    <!-- END FORM-->
+                </div>
+          
+        </fieldset>
+    }
+</body>
+</html>

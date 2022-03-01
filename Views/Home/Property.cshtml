@@ -1,0 +1,625 @@
+﻿@{
+    ViewBag.Title = "Property";
+    Layout = "~/Views/Shared/_HomePageLayout.cshtml";
+}
+@model IEnumerable<HarputGayriMenkul.Models.sel_Advert_Result>
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from wpestatetheme.org/properties/central-park-view/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jan 2016 06:34:55 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+<head>
+   
+    
+    <script src="sliderengine/initslider-1.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <title>Central Park View | WP Estate | Responsive Real Estate Theme</title>
+
+    <link rel="pingback" href="~/Content/EmlakPages/wpestatetheme.org/xmlrpc.php" />
+
+
+
+    <link rel="shortcut icon" href="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/06/16.png" type="image/x-icon" />
+    <link rel="alternate" type="application/rss+xml" title="WP Estate | Responsive Real Estate Theme &raquo; Feed" href="~/Content/EmlakPages/wpestatetheme.org/feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="WP Estate | Responsive Real Estate Theme &raquo; Comments Feed" href="~/Content/EmlakPages/wpestatetheme.org/comments/feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="WP Estate | Responsive Real Estate Theme &raquo; Central Park View Comments Feed" href="feed/index.html" />
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "http:\/\/s.w.org\/images\/core\/emoji\/72x72\/", "ext": ".png", "source": { "concatemoji": "http:\/\/wpestatetheme.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.2" } };
+        !function (a, b, c) { function d(a) { var c = b.createElement("canvas"), d = c.getContext && c.getContext("2d"); return d && d.fillText ? (d.textBaseline = "top", d.font = "600 32px Arial", "flag" === a ? (d.fillText(String.fromCharCode(55356, 56812, 55356, 56807), 0, 0), c.toDataURL().length > 3e3) : (d.fillText(String.fromCharCode(55357, 56835), 0, 0), 0 !== d.getImageData(16, 16, 1, 1).data[0])) : !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g; c.supports = { simple: d("simple"), flag: d("flag") }, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.simple && c.supports.flag || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+		</script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='dsidx-css' href='http://cdn3.diverse-cdn.com/api/combo-css/config=dsidxpress.css/43e53d' type='text/css' media='all' />
+    <link rel='stylesheet' id='dsidxpress-icons-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/dsidxpress/css/dsidx-icons274c.css?ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='dsidxpress-unconditional-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/dsidxpress/css/client274c.css?ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='dsidxwidgets-unconditional-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/dsidxpress/dsidxwidgets/css/client274c.css?ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/revslider/public/assets/css/settings58aa.css?ver=5.0.7' type='text/css' media='all' />
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
+        #rs-demo-id {
+        }
+    </style>
+    <link rel='stylesheet' id='wpestate_style-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/style5152.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='wpestate_media-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/css/my_media5152.css?ver=1.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='jquery.ui.theme-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min274c.css?ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='wpestate-roboto-css' href='http://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C300&amp;subset=latin%2Clatin-ext&amp;ver=4.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome.min-css' href='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/css/fontawesome/css/font-awesome.min274c.css?ver=4.3.2' type='text/css' media='all' />
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/jqueryc1d8.js?ver=1.11.3'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+    <script type='text/javascript' src='http://cdn3.diverse-cdn.com/api/combo-js/config=dsidxpress.js/4fc9f4?ver=2.1.25'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min58aa.js?ver=5.0.7'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min58aa.js?ver=5.0.7'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/modernizr.custom.624565152.js?ver=1.0'></script>
+    <script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?sensor=true&amp;key=AIzaSyAnht2vS1oNOrXArwI0KziXfB5bT37Mh6s&amp;ver=1.0'></script>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="~/Content/EmlakPages/wpestatetheme.org/xmlrpc0db0.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="~/Content/EmlakPages/wpestatetheme.org/wp-includes/wlwmanifest.xml" />
+    <link rel='prev' title='Private Lake In Manhattan' href='../private-lake-in-center-manhattan/index.html' />
+    <link rel='next' title='Boutique Space Greenville' href='../boutique-space-in-manhattan/index.html' />
+    <meta name="generator" content="WordPress 4.3.2" />
+    <link rel='canonical' href='index.html' />
+    <link rel='shortlink' href='~/Content/EmlakPages/wpestatetheme.org/index4c85.html?p=360' />
+    <style type='text/css'>
+        .ribbon-wrapper-under-offer {
+            background-color: #c0392b;
+        }
+
+        .under-offer {
+            padding-top: 10px;
+        }
+
+        .ribbon-wrapper-open-home {
+            background-color: #2c3e50;
+        }
+
+        .open-home {
+            padding-top: 10px;
+        }
+
+        .ribbon-wrapper-hot-offer {
+            background-color: #e74c3c;
+        }
+
+        .hot-offer {
+            padding-top: 10px;
+        }
+
+        .ribbon-wrapper-new-offer {
+            background-color: #2c3e50;
+        }
+
+        .new-offer {
+            padding-top: 10px;
+        }
+
+        .top-user-menu-wrapper {
+            background: #f5f5f5;
+            color: #1a171b;
+        }
+
+            .top-user-menu-wrapper a {
+                color: #1a171b;
+            }
+
+        .dsidx-standalone-disclaimer {
+            display: none;
+        }
+
+        ul.dsidx-list.dsidx-panel li {
+            border-top: 0px dotted #ededed;
+        }
+
+        .pack_description_unit {
+            padding: 15px 0px 15px 15px;
+        }
+
+        #property_address {
+            height: 98px;
+        }
+
+        img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img {
+            border: 0px solid #ddd;
+        }
+
+        input[type=password] {
+            text-transform: none!important;
+        }
+    </style>
+    <meta name="generator" content="Powered by Slider Revolution 5.0.7 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <script type="text/javascript">
+        if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
+        localdsidx.pluginUrl = "~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/dsidxpress/index.html";
+        localdsidx.homeUrl = "~/Content/EmlakPages/wpestatetheme.org/index.html";
+    </script>
+    <script type="text/javascript">
+        if (typeof localdsidx == "undefined" || !localdsidx) { var localdsidx = {}; };
+        localdsidx.pluginUrl = "~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/dsidxpress/index.html";
+        localdsidx.homeUrl = "~/Content/EmlakPages/wpestatetheme.org/index.html";
+    </script>
+
+     <script src="~/Content/sliderengine/jquery.js"></script>
+    <script src="~/Content/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/sliderengine/amazingslider-1.css">
+</head>
+
+
+<body class="single single-estate_property postid-360">
+    <div id="page">
+        <div class="gmap_wrapper" id="gmap_wrapper" data-post_id="360" data-cur_lat="40.7877333" data-cur_long="-73.96776849999998"  >
+                   
+
+    </div>       
+
+          
+      @foreach(var item in Model){
+       
+           
+             
+   
+        <div id="wrapper" class="">
+            <div class="whiteonleft"></div>
+
+            <div id="breadcrumbs_wrapper" class=" "></div>
+            <div id="main" class="row right">
+                 
+                <div class="breadcrumbs-internal ">
+                    <a href="~/Content/EmlakPages/wpestatetheme.org/index.html">Anasayfa</a><span class="bread_arrows">&raquo;</span><a href="~/Content/EmlakPages/wpestatetheme.org/property_category/apartments/index.html" rel="tag">@item.KategoriAdı</a><span class="bread_arrows">&raquo;</span><span class="bread_selected">Central Park View</span>
+                </div>
+
+
+                <!-- begin content-->
+                <div id="post" class="listingborder nine columns alpha shadowonleft">
+                    <div class="inside_post inside_no_border">
+
+
+                        <div class="anchor-bord">
+                            <ul>
+                                <li><a href="#prop_des">Açıklama</a>
+                                </li>
+
+                                <li><a href="#prop_det">Detaylar</a>
+                                </li>
+
+                                <li><a href="#prop_ame">Özellikler</a>
+                                </li>
+
+                                <li><a href="#prop_inq">Enquires</a>
+                                </li>
+
+                                <li><a href="#comment">Similar Listings</a>
+                                </li>
+                            </ul>
+                        </div>
+                      
+                        <div class="thumbs_row">
+                            <div class="google_icons">
+                               
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/google-map-thumb.jpg" class="gthumb" id="gmap" data-tip="gmap" alt="google-map-thumb" onclick="closeStreetView();" />
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/google-place-thumb.jpg" class="gthumb" id="gview" data-tip="gview" alt="google-map-thumb" onclick="toggleStreetView();" />
+
+                            </div>
+                            <div class="image_thumbs_row">
+                               @* <div class="video_thumb" id="play_video" style="background-image: url(~/Content/EmlakPages/wpestatetheme.org/../i.vimeocdn.com/video/503631401_200x150.jpg);" data-video_data="vimeo" data-video_id="23237102">
+                                    <span class="video_play_prop"></span>
+                                </div>*@
+                                @foreach (var foto in ViewBag.ListPicture)
+                                {
+                                <img width="136" height="68" src="~/Images/large/@foto.PictureName" alt="slider-thumb" data-tip="imag" class="current-thumb" data-original="~/Images/large/@foto.PictureName" data-full="~/Images/large/@foto.PictureName" />
+                                
+                                }
+                            </div>
+                                
+                        </div>
+                      
+                        <div class="blankpin rentalspin"></div>
+
+
+
+                        <!-- start  sixprop content container-->
+                        <div class="sixprop propcol">
+                            <h1 class="entry-title-prop">@item.Başlık</h1>
+                            <div class="under-title">
+                                TL @item.Fiyat /sq ft - new offer                       
+                            </div>
+
+
+                            <div class="under-title-addres" id="prop_des">
+                                @item.Başlık, <a href="~/Content/EmlakPages/wpestatetheme.org/property_city/new-york/index.html" rel="tag">@item.Şehir</a>
+                            </div>
+
+
+                            <div class="mobilenav">
+                                <span class="prev_prop"><a href="../private-lake-in-center-manhattan/index.html" rel="prev"></a></span>
+                                <span class="next_prop"><a href="../boutique-space-in-manhattan/index.html" rel="next"></a></span>
+                            </div>
+
+
+
+
+                            <div class="property_description">
+                                <h4>Property Description</h4>
+                                <p>@item.Açıklama</p>
+                            </div>
+                            <hr class="dottedline">
+                            <h4 id="prop_det">Property Details                        </h4>
+                            <div class="prop_details">
+                                <ul>
+                                    <li><span class="title_feature_listing">Fiyat: </span>TL @item.Fiyat /sq ft</li>
+                                    <li><span class="title_feature_listing">Adres: </span>@item.Lokasyon</li>
+                                    <li><span class="title_feature_listing">Şehir: </span><a href="~/Content/EmlakPages/wpestatetheme.org/property_city/new-york/index.html" rel="tag">@item.Şehir</a></li>
+                                    <li><span class="title_feature_listing">İlçe: </span><a href="~/Content/EmlakPages/wpestatetheme.org/property_area/manhattan/index.html" rel="tag">@item.İlçe</a></li>
+                                    <li><span class="title_feature_listing">Semt: </span>@item.Semt</li>
+                                    <li><span class="title_feature_listing">Mahalle: </span>@item.Mahalle</li>
+                                    <li><span class="title_feature_listing">No: </span>10009</li>
+                                    <li><span class="title_feature_listing">ÜLKE: </span>Türkiye</li>
+                                </ul>
+                            </div>
+
+
+
+                            <div class="prop_details">
+                                <ul>
+
+                                    <li><span class="title_feature_listing">Metre Kare: </span>@item.MetreKare metre kare</li>
+                                    <li><span class="title_feature_listing">Yapı Tipi: </span>@item.YapıTipi</li>
+                                    <li><span class="title_feature_listing">Yapı Durumu: </span>@item.YapıDurumu</li>
+                                    <li><span class="title_feature_listing">Isınma Tipi: </span>@item.IsınmaŞekli</li>
+                                    <li><span class="title_feature_listing">Döviz Türü: </span>@item.DövizTuru</li>
+                                    <li><span class="title_feature_listing">Krediye Uygun Mu: </span>@item.KrediyeUygunMu</li>
+   
+                                    <li><span class="title_feature_listing">Oda Sayısı: </span>@item.OdaSayısı</li>
+                                    <li><span class="title_feature_listing">Banyo Sayısı: </span>@item.BanyoSayısı</li>
+                                    
+                                </ul>
+                            </div>
+
+                            <!--Custom Properties -->
+                            <div class="prop_details_custom">
+                                <p><span class="title_feature_listing">Year Built: </span>1971</p>
+                                <p><span class="title_feature_listing">Garages: </span>1</p>
+                                <p><span class="title_feature_listing">Garage Size In Square Feet: </span>50</p>
+                                <p><span class="title_feature_listing">Basement: </span>full</p>
+                                <p><span class="title_feature_listing">External Construction: </span>terace</p>
+                                <p><span class="title_feature_listing">Roofing: </span>new</p>
+                                <p><span class="title_feature_listing">Exterior Material: </span>brick</p>
+                                <p><span class="title_feature_listing">Structure Type: </span>mansion</p>
+                                <p><span class="title_feature_listing">Stories: </span>4</p>
+                                <p><span class="title_feature_listing">İlan Tarihi: </span>@item.İlanTarihi</p>
+                                <p><span class="title_feature_listing">İlan No : </span>@item.İlanID</p>
+                            </div>
+
+
+
+
+
+                
+
+
+                            <h4 id="prop_ame">İç Özellikler</h4>
+                            @foreach (var infe in ViewBag.InternalFeatures)
+                            {
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />@infe</div>
+                            
+                           
+                            }
+                             <h4 id="prop_ame">Dış Özellikler</h4>
+                            @foreach (var infe in ViewBag.ExteriorFeatures)
+                            {
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />@infe</div>
+                            
+                           
+                            }
+                             <h4 id="prop_ame">Çevre Özellikleri</h4>
+                            @foreach (var infe in ViewBag.EnvironmentFeatures)
+                            {
+                            <div class="features_listing_div">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />@infe</div>
+                            
+                           
+                            }
+
+
+
+                            <div class="properties_agent_notes">
+                                <h4>Agent Notes</h4>
+                                Purchases require no downpayment, 0% Interest and you receive 4 years to pay! 1 Bedroom unit costs as low as $18,000 per month. 2 Bedroom unit costs as low as $25,000 per month.
+                            </div>
+                            <hr class="dottedline bottom-estate_property">
+
+
+                            <div class="related_listings bottom-estate_property">
+                                <h2 id="comment">Similar Listings</h2>
+                                <div class="four columns  alpha">
+                                    <figure>
+                                        <a href="../beautiful-island-house/index.html" class="listing_image">
+                                            <img width="980" height="777" src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2014/01/file1681300058951-980x777.jpg" class="lazyload wp-post-image" alt="file1681300058951" data-original="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2014/01/file1681300058951-980x777.jpg" /></a>
+
+                                        <figcaption data-link="../beautiful-island-house/index.html">
+                                            <span class="fig-icon"></span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="property_listing_details">
+                                        <h3 class="listing_title"><a href="../beautiful-island-house/index.html">Beautiful apartment  for rent</a></h3>
+
+                                        <span class="property_price">USD 1,000 / month</span>
+                                        <div class="article_property_type">Park View, St 345, <a href="~/Content/EmlakPages/wpestatetheme.org/property_city/new-york/index.html" rel="tag">New York</a> </div>
+
+                                        <div class="article_property_type">
+                                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_category/apartments/index.html" rel="tag">Apartments</a> in  
+                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_action_category/rentals/index.html" rel="tag">Rentals</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="four columns  ">
+                                    <figure>
+                                        <a href="../condo-240-w-98th-street/index.html" class="listing_image">
+                                            <img width="980" height="777" src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/4cgraphic-980x777.jpg" class="lazyload wp-post-image" alt="New York Park Caption" data-original="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/4cgraphic-980x777.jpg" /></a>
+
+                                        <figcaption data-link="../condo-240-w-98th-street/index.html">
+                                            <span class="fig-icon"></span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="property_listing_details">
+                                        <h3 class="listing_title"><a href="../condo-240-w-98th-street/index.html">Condo 240 W 98th Street</a></h3>
+
+                                        <span class="property_price">USD 100,000 /year</span>
+                                        <div class="article_property_type">Tonelle Ave, 17, <a href="~/Content/EmlakPages/wpestatetheme.org/property_city/jersey-city/index.html" rel="tag">Jersey City</a> </div>
+
+                                        <div class="article_property_type">
+                                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_category/apartments/index.html" rel="tag">Apartments</a> in  
+                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_action_category/rentals/index.html" rel="tag">Rentals</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="four columns  omega nomargin">
+                                    <figure>
+                                        <a href="../2-bedrooms-3rd-avenue/index.html" class="listing_image">
+                                            <img width="980" height="777" src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/WPEstateImageAfter434-980x777.jpg" class="lazyload wp-post-image" alt="WPEstateImageAfter43" data-original="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/WPEstateImageAfter434-980x777.jpg" /></a>
+                                        <a href="../2-bedrooms-3rd-avenue/index.html">
+                                            <div class="ribbon-wrapper-default ribbon-wrapper-sold">
+                                                <div class="ribbon-inside sold">sold</div>
+                                            </div>
+                                        </a>
+                                        <figcaption data-link="../2-bedrooms-3rd-avenue/index.html">
+                                            <span class="fig-icon"></span>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="property_listing_details">
+                                        <h3 class="listing_title"><a href="../2-bedrooms-3rd-avenue/index.html">2 Bedrooms 3rd Avenue</a></h3>
+
+                                        <span class="property_price">USD 5,000 </span>
+                                        <div class="article_property_type">3rd Avenue, <a href="~/Content/EmlakPages/wpestatetheme.org/property_city/new-york/index.html" rel="tag">New York</a> </div>
+
+                                        <div class="article_property_type">
+                                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_category/apartments/index.html" rel="tag">Apartments</a> in  
+                            <a href="~/Content/EmlakPages/wpestatetheme.org/property_action_category/rentals/index.html" rel="tag">Rentals</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <span id="menu_stopper"></span>
+
+
+
+
+                        </div>
+                        <!-- end sixprop content container-->
+
+
+                        <!-- start fixed sidebar-->
+                        <div class="twoprop propcol">
+                            <span class="prev_prop"><a href="../private-lake-in-center-manhattan/index.html" rel="prev"></a></span>
+                            <span class="next_prop"><a href="../boutique-space-in-manhattan/index.html" rel="next"></a></span>
+                            <div id="add_favorites" class="isnotfavorite" data-postid="360">add to favorites</div>
+                        </div>
+                        <!-- end fixed sidebar-->
+
+
+
+                    </div>
+                    <!-- end inside-->
+                </div>
+                <!-- end content-->
+
+
+                <!-- begin sidebar -->
+                <div id="primary" class="widget-area-sidebar three columns omega">
+                    <ul class="xoxo">
+                        <li id="advanced_search_widget-14" class="widget sbg_widget properties advanced_search_sidebar">
+                            <h3 class="widget-title-sidebar">Advanced Search</h3>
+                            <form role="search" method="post" action="http://wpestatetheme.org/advanced-search/">
+                                <div class="sidebar_advanced_area_action adv1">
+                                    <select id="filter_search_action_sidebar" name="filter_search_action[]" class="cd-select">
+                                        <option value="all">All Listings</option>
+                                        <option value="Rentals">Rentals</option>
+                                        <option value="Sales">Sales</option>
+                                    </select>
+                                </div>
+                                <div class="sidebar_advanced_area_categ adv2">
+                                    <select id="filter_search_type_sidebar" name="filter_search_type[]" class="cd-select">
+                                        <option value="all">All Types</option>
+                                        <option value="Apartments">Apartments</option>
+                                        <option value="Condos">Condos</option>
+                                        <option value="Duplexes">Duplexes</option>
+                                        <option value="Houses">Houses</option>
+                                        <option value="Industrial">Industrial</option>
+                                        <option value="Land">Land</option>
+                                        <option value="Offices">Offices</option>
+                                        <option value="Retail">Retail</option>
+                                        <option value="Villas">Villas</option>
+                                    </select>
+                                </div>
+                                <div class="sidebar_advanced_city_div adv3">
+                                    <select id="advanced_city_sidebar" name="advanced_city" class="cd-select">
+                                        <option value="all">All Cities</option>
+                                        <option value="Jersey City">Jersey City</option>
+                                        <option value="London">London</option>
+                                        <option value="New York">New York</option>
+                                    </select>
+                                </div>
+                                <div class="sidebar_advanced_area_div adv4">
+                                    <select id="advanced_area_sidebar" name="advanced_area" class="cd-select">
+                                        <option data-parentcity="*" value="all">All Areas</option>
+                                        <option value="East Harlem" data-parentcity="New York">East Harlem</option>
+                                        <option value="Greenville" data-parentcity="Jersey City">Greenville</option>
+                                        <option value="Manhattan" data-parentcity="New York">Manhattan</option>
+                                        <option value="Northern Brooklyn" data-parentcity="New York">Northern Brooklyn</option>
+                                        <option value="Queens" data-parentcity="New York">Queens</option>
+                                        <option value="Southwark" data-parentcity="London">Southwark</option>
+                                        <option value="The Heights" data-parentcity="Jersey City">The Heights</option>
+                                        <option value="Upper East Side" data-parentcity="New York">Upper East Side</option>
+                                        <option value="West Side" data-parentcity="New York">West Side</option>
+                                    </select>
+                                </div>
+                                <input type="text" id="minim-price" name="minim-price" placeholder="Minim Price" class="advanced_select"><input type="text" id="maxim-price" name="maxim-price" placeholder="Maxim Price" class="advanced_select"><input type="text" id="bedrooms-number" name="bedrooms-number" placeholder="Bedrooms Number" class="advanced_select"><script type="text/javascript">
+                                                                                                                                                                                                                                                                                                                                                                           //<![CDATA[
+                                                                                                                                                                                                                                                                                                                                                                           jQuery(document).ready(function () {
+                                                                                                                                                                                                                                                                                                                                                                               jQuery("#wavailable-from").datepicker({
+                                                                                                                                                                                                                                                                                                                                                                                   dateFormat: "yy-mm-dd"
+                                                                                                                                                                                                                                                                                                                                                                               });
+                                                                                                                                                                                                                                                                                                                                                                           });
+                                                                                                                                                                                                                                                                                                                                                                           //]]>
+                                </script>
+                                <input type="text" id="wavailable-from" name="available-from" placeholder="Available From" class="advanced_select">
+                                <input name="submit" type="submit" class="btn vernil small adv_subimit" id="advanced_submit_widget" value="Search">
+                            </form>
+                        </li>
+                        <li id="mortgage_widget-15" class="widget sbg_widget properties Mortgage Calculator">
+                            <div class="mortgage_calculator_div">
+                                <h3>Mortgage Calculator</h3>
+                                <div id="input_formula">
+                                    <label for="sale_price">Sale Price</label>
+                                    <input type="text" id="sale_price" value="100000">
+
+                                    <label for="percent_down">Percent Down</label>
+                                    <input type="text" id="percent_down" value="10">
+
+
+                                    <label for="term_years">Term (Years)</label>
+                                    <input type="text" id="term_years" value="30">
+
+                                    <label for="interest_rate">Interest Rate in %</label>
+                                    <input type="text" id="interest_rate" value="5">
+
+                                    <div id="morg_results">
+                                        <span id="am_fin"></span>
+                                        <span id="morgage_pay"></span>
+                                        <span id="anual_pay"></span>
+                                    </div>
+
+                                    <span class="btn vernil  morg_submit" id="morg_compute">Calculate</span>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li id="zillow_estimate_widget-8" class="widget sbg_widget properties zillow_widget">
+                            <h3 class="widget-title-sidebar">Estimate your home</h3>
+
+                            <form method="post" action="http://wpestatetheme.org/zillow-estimate/">
+                                <input type="text" id="zill_estimate_adr" name="zill_estimate_adr" placeholder="Your Address">
+                                <input type="text" id="zill_estimate_city" name="zill_estimate_city" placeholder="Your City">
+                                <input type="text" id="zill_estimate_state" name="zill_estimate_state" placeholder="Your State Code (ex CA)">
+                                <input name="submit" type="submit" class="btn vernil small" id="zill_submit_estimate" value="Get Estimation">
+                            </form>
+                        </li>
+                        <li id="featured_widget-29" class="widget sbg_widget properties featured_sidebar">
+                            <div class="featured_sidebar_intern"><a href="../lake-view-manhattan/index.html">
+                                <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/uploads/2013/05/4cgraphic-980x777.jpg" alt="slider-thumb" /></a><span class="featured_title"><a href="../lake-view-manhattan/index.html" class="featured_title_link">Lake View In Manhattan</a></span><span class="featured_second_line">featured property widget </span></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- end sidebar -->
+
+            </div>
+            <!-- #main -->
+        </div>
+             
+        <!-- #wrapper -->
+
+        <!--WPFC_FOOTER_START-->
+
+
+
+        
+        <!-- #colophon -->
+       }
+    </div>
+    <!-- #page -->
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/mouse.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/draggable.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/jquery.dropdown5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/gumby.min5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/jquery.fitvids5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/mediaelement/froogaloop.mind5f7.js?ver=2.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/jquery.elastislide5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/jquery.flexslider5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/jquery.prettyphoto5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/jquery.imagesloaded5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/datepicker.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/position.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/menu.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/jquery/ui/autocomplete.mine899.js?ver=1.11.4'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/infobox5152.js?ver=1.0'></script>
+    
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/google_js/google_map_code_prop5152.js?ver=1.0'></script>
+    
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/google_js/mapfunctions5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/google_js/markerclusterer5152.js?ver=1.0'></script>
+    
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/control5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-includes/js/comment-reply.min274c.js?ver=4.3.2'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/property5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/js/google_js/idx5152.js?ver=1.0'></script>
+    <script type='text/javascript' src='~/Content/EmlakPages/wpestatetheme.org/wp-content/plugins/dsidxpress/js/autocomplete36fb.js?ver=2.1.25'></script>
+
+    <script>
+        //<![CDATA[
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '~/Content/EmlakPages/wpestatetheme.org/../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-41924406-1', 'wpestatetheme.org');
+        ga('send', 'pageview');
+        //]]>
+</script>
+
+
+
+
+
+</body>
+
+<!-- Mirrored from wpestatetheme.org/properties/central-park-view/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jan 2016 06:35:22 GMT -->
+</html>
+<!-- need to refresh to see cached version -->

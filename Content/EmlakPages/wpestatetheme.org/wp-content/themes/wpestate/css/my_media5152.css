@@ -1,0 +1,2249 @@
+
+
+
+@media all and (min-width:1680px) {
+  
+
+    .gmap_wrapper {
+        position: relative;
+        float: left;
+        width: 100%;
+
+    }
+
+}
+
+
+@media all and (max-width:1280px) {
+ 
+}
+
+@media only screen and (max-width: 1135px){
+    .header_social{
+        display:none;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1310px){
+    .header_control{    
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1180px){
+    .gmap-next, 
+    .gmap-next-picture,
+    .gmap-prev, 
+    .gmap-prev-picture{
+        width: 75px;
+        background-position: 50% 50%;
+        height: 50%;
+    }
+    
+    .gmap-next:hover,  
+    .gmap-prev:hover{
+        width: 75px;
+        background-position: 50% 50%;
+        height: 50%;
+    }
+       
+    .gmap-prev, .gmap-prev-picture{
+        bottom:0px;
+    }
+  
+    .search_holder{
+        display: block;
+        margin-right: 30px; 
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1100px){
+    
+    .gmap-prev,
+    .gmap-prev:hover,
+    .gmap-prev-picture,
+    .gmap-prev-picture:hover{
+        top:0px;
+        right:50%;
+        height: 75px;
+        width: 75px;
+        background-position: 50% 50%;
+    }
+     
+    .gmap-next,
+    .gmap-next:hover,
+    .gmap-next-picture,
+    .gmap-next-picture:hover{
+            top:0px;
+            left:50%;
+            height: 75px;
+        width: 75px;
+        background-position: 50% 50%;
+    }
+    
+    
+    
+    
+    
+}
+
+
+@media only screen and (max-width: 980px){
+    .thumbs_row{
+        left: 0px;
+        margin-left: -5px;
+    }
+}
+
+
+
+@media only screen and (max-width: 959px){
+    
+    
+    .booking_form_request .half_form {
+        width: 50%;
+        max-width: 430px;
+    }
+    
+     #booking_guest_no{
+        width:50%;  
+        max-width: 422px;
+    }
+    
+    .booking_form_request .rightinput {
+        padding-left: 0px;
+    }
+
+
+    .widget_latest_internal span{
+        color: #1a171b;
+    }
+    
+    #pictureMap img{
+        height:  auto;
+        height: auto;
+        width:100%;
+        margin: 0px auto;
+        position: relative;
+        left:0px;
+    }
+    .left-top-widet{
+        display:none;
+    }
+    
+    .wellcome-user{
+        margin:0px auto;  
+        float:none;
+    }
+    
+    #mobile_display{
+        display:block;
+    }
+    
+    
+    .adv_seach_code_right{
+        margin-right:27px!important;
+    }
+
+    #advanced_submit_shorcode{
+        margin-left:10px;
+    }
+
+    #listing_ajax_container{
+        width:auto;
+        min-width: 200px;
+    }
+    
+    .actionsmobile{
+        float: left;
+        margin: 15px 0px 0px 0px;
+        position: relative;
+        width: 100%!important;
+    }
+    
+    .half_form_last,
+    .full_form-nob,
+    .half_form,
+    .full_form{
+      margin-left: 0px;   
+    }
+    .pack_description_unit{
+        width:30%;
+        padding: 10px 0px 10px 20px;
+    }
+    
+    .pack_description{
+        height: auto;
+    }
+    
+    .web{
+    display:none;
+    }
+    
+    .mobile{
+    display:block;
+    }
+
+    
+    .add-estate .advanced_area_div,
+    .add-estate .advanced_city_div{
+        width:100%;
+    }
+    
+    
+    
+    #form_submit_1{
+        margin-left: 11px;
+    }
+    
+    
+    
+    .dasboard-prop-listing .info-container{
+        float:left;
+        height: auto;
+    }
+    
+    .dasboard-prop-listing .listing_title{
+        margin-left: 0px;
+        padding-left: 0px!important;
+    }
+
+    
+    .listing_submit_normal{
+       position: relative; 
+    }
+    
+    
+    
+    
+    .listing_advanced_city_div{
+        margin-left: 10px;
+    }
+
+    .noshadow .property_listing:nth-of-type(4n),
+    .shadowonleft .property_listing:nth-of-type(3n),
+    .shadowonright .property_listing:nth-of-type(3n){
+        float:left;
+    }
+
+    .features_listing_div{
+        width: 40%;
+        margin-left: 10px;
+    }
+  
+    #ajax_login_div h2, 
+    #ajax_login_container h5,
+    #ajax_register_div h2{
+        padding-left: 0px!important;        
+    }
+    
+    /*user dashboard css*/
+    
+    #profile_pass, 
+    #profile_message,
+    #profile-div,
+    #upload-container{
+    margin-left: 5px;    
+    }
+    
+    #reg_passmail,
+    .submit{
+        margin-left: 0px;
+    }
+    
+    .user_tab_menu{
+        height:auto;
+    }
+    
+    .user_tab_menu a {
+        width: 49%;
+        height: 43px;
+        float: left;
+        margin: 1px;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    #search_map_button,
+    #advanced_search_map_button,
+    #adv-search-2,
+    #adv-search-header-2,
+    #adv-search-header-contact-3,
+    #adv-contact-3,
+    #adv-search-header-3,
+    #adv-search-3,
+    #adv-search-header-4,
+    #adv-search-4,
+    #adv-search-5{
+        display: none;
+    }
+    
+    .adv_extra_options{
+        display: block;
+    }
+    
+    .adv-search-mobile{
+        display:none;
+        width: 100%;
+        float: left;
+        padding-top: 11px;
+        position: relative;
+        overflow: visible;
+        z-index: 9999;
+        height: auto;
+        max-height: 480px;
+}
+    
+    
+    
+    body{
+        padding: 5px;
+    }
+
+    #main{
+        padding: 0px 0px 10px 0px;
+        margin-top: 0px;
+    }
+    #wrapper{
+        margin-top: 0px;
+    }
+    
+    p{
+        margin: 0px 10px 11px 10px;
+    }
+    
+    h1,h2,h3,h4,h5,h5{
+        padding-left: 10px !Important;
+        line-height: 1.1em;
+    }
+
+    /* ------------------------------------------------------------------- header */
+
+    
+  
+    .top-user-menu{
+     width:100%;   
+     text-align: center;
+    }
+    
+    .header_control{
+      float: left;
+      height: auto;
+      margin-top: -25px;
+      background: #fff;
+    }
+    
+    .fullwidthbanner-container{
+        float:left;
+        background: transparent;
+    }    
+    
+    #branding{
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow: none;    
+        padding-top: 20px;
+    }
+
+    #access {
+        display:none;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+        padding: 0px;
+    }
+    
+    .logo img{
+        float:none;
+    }
+
+    .header_social {
+        display: block;
+        margin: 0px auto;
+        float: none;
+        margin-bottom: 0px;
+        width:95px;
+    }
+
+    #select_menu{
+        display: block !important;
+        width: 100%;
+        margin:0px auto;
+        padding:4px;
+    }
+
+    /* ------------------------------------------------------------------- gmap */
+    
+    .info_details{
+        margin-top: -430px;
+    }
+    
+    .small-info{
+         margin-top:-378px;  
+    }
+    
+    #info_inside{
+        margin-bottom: 10px;
+    }
+    
+    .gmap_wrapper{
+        
+    }
+    
+    .gmap-menu-wrapper{
+        width:100%;   
+        margin-top: 0px;
+    }
+
+    #gmap-mobile-filters{
+        display:block;
+    }
+
+    .gmap-menu{
+        width:100%;   
+        left:0px;
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+        bottom: -70px;
+        background-color: #f5f5f5;
+        position: absolute;  
+        opacity: 1;
+        padding-bottom: 7px;
+        padding-left: 10px;
+    }
+
+    .gmap-menu .action_filter{
+        padding: 24px 0px 0px 0px;
+        margin-left: 0px;
+        max-width: none;
+    }   
+
+    .gmap-menu .type-filters{
+        padding: 0px 0px 2px 0px;
+    }
+    
+    .advanced1,
+    .advanced2{
+        padding-left:10px;
+    }
+   
+    .action_filter{
+      float:left;
+      padding: 15px 0px 0px 10px;
+    }
+
+    .type-filters{
+      float:left;
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+
+    .listing_filters .action_filter{
+        margin:0px 0px 0px 10px;
+        padding: 23px 0px 0px 0px;
+    }
+    
+    .listing_filters .type-filters{
+        margin:0px 0px 0px 10px;
+        padding:0px;
+    }
+    
+    .checker {
+        width:130px;
+        margin :0px 0px 10px 0px!important;
+        height: 30px;
+        line-height: 15px;
+    }
+
+    .checker label span {
+        height: 25px;
+    }
+    
+    .search_wrapper{
+        position:relative;
+        top:0px;
+        float:left;
+
+    }
+
+    #search_map_form{
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow: none;
+        bottom:0px;
+        width: 100%;
+        right: 0px;
+        height: 110px;
+        position: relative;
+        background-color: #67cfd8;
+        color: #fff;
+    }
+
+    #search_map_form input[type="text"], 
+    #search_map_form textarea{
+        padding: 25px 0px 4px 0px;
+        color: #fff;
+        padding: 30px 10px 4px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }    
+
+
+    #advanced_search_map_form {
+        position: relative;
+        width: 100%;
+        right: 0;
+        float: left;
+        background-color: #F5F5F5;
+        bottom:0px;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow: none;
+        margin-top: -70px;
+
+    }
+/*
+     .advanced_search_map {
+        width:100%;
+        height: 70px;
+        position: relative;
+        top:auto;
+        float:left;
+        padding-top: 25px;
+        display:block!important;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow: none;   
+    }
+*/
+#advanced_search_map_button_mobile{
+       width:100%;
+        height: 70px;
+        position: relative;
+        top:auto;
+        float:left;
+        padding-top: 25px;
+        display:block!important;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow: none;   
+         -moz-box-sizing: border-box;
+}
+    .adv_search_checkers{
+        margin-left: 10px;
+        margin-bottom: 0px;
+        box-sizing: border-box;
+        width:auto;
+        padding-top: 10px;
+    }
+    
+    .adv_search_internal{
+        margin-left: 10px!important;
+    }
+    
+    .adv_search_submit{
+        margin-left: 11px!important;
+    }
+    
+    #advanced_search_map_form input[type=text],
+    .advanced_city_div{
+        margin-bottom: 20px;
+    }
+    
+    .firstcol{
+        margin-bottom: 11px;
+    }
+
+    .slider-wrapper {
+        margin-top: 80px;
+      
+    }
+
+    .slider-wrapper,
+    #slider-range{
+        width:100%;
+        padding: 0px 10px;
+        box-sizing:border-box;
+    }
+
+
+    .advanced1{
+        width:85%;
+        padding-bottom: 0px;
+    }
+    
+    .advanced1 h4{
+        padding-left: 0px;       
+    }
+    
+    .advanced2{
+        width: 85%;
+        padding-top: 20px;
+    }
+    
+
+    .advanced1 .checker, 
+    .advanced2 .checker{
+        margin-left: 0px;
+    }
+
+    
+   #mobile-geolocation-button{
+        display: block;
+    }
+    
+    .geolocation-button,
+    .tooltip-geolocation{
+        display: none;
+    }
+    
+    /* ------------------------------------------------------------------- content */
+    
+   
+    .shadowonleft,
+    .shadowonright{
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow: none;
+    }
+
+    
+    .column, .columns {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .row .nine.columns,
+    .row .three.columns,
+    .row .four.columns,
+    .row .five.columns,
+    .row .six.columns,
+    .row .seven.columns,
+    .row .eight.columns,
+    .row .nine.columns,
+    .row .ten.columns,
+    .row .eleven.columns,
+    .row .twelve.columns,
+    .row .two.columns{
+        width: 100%;
+    }
+
+    .keeper-6 .col, .keeper-5 .col, .keeper-4 .col,
+    .keeper-3 .col , .keeper-2 .col, .keeper-1 .col{
+        width: 100%;
+        padding:0px;
+        margin-bottom: 30px;
+    }
+
+    .article_container{
+        margin-bottom: 0px;
+    }
+
+    .col .col-header {
+        float:left;
+        width:100%;
+    }
+
+    .row {
+        text-align:left;
+        width: 100%;
+        min-width: 0;
+        margin:0px;
+    }
+
+    .whiteonleft,
+    .whiteonright{
+        display: none;
+    }
+
+    .agentborder,
+    .blogborder,
+    .listingborder,
+    .shadowonright.agentborder,
+    .shadowonright.blogborder,
+    .shadowonright.listingborder{
+        border:none!important;
+
+    }
+    
+    
+    .shadowonright .columns h1,
+    .shadowonright .columns h2,
+    .shadowonright .columns h3,
+    .shadowonright .columns h4,
+    .shadowonright .columns h5,
+    .shadowonright .columns h6{
+        padding-left: 10px;
+        line-height: 1.2em;
+    }
+    
+    #post figure{
+        overflow: hidden;
+        width:220px;
+    } 
+    
+    .featured_prop_img figure,
+    .featured_article figure{
+        width:100%!important;
+    }
+    
+    
+    #post figure a{
+        width: 100%;
+    }
+    
+    #post figure:before{
+        display: none;
+    }
+    .featured_prop_img:before{
+        display: none;
+    }
+    
+    .widget_latest_internal figcaption{
+        display: none;
+    }
+    
+    .widget_latest_internal figure {
+        width:100%;
+        height: auto; 
+    }
+    
+    /* ------------------------------------------------------------------- search */
+
+    .search_holder{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        -moz-box-shadow: none;
+        float:left;
+    }
+
+    .price_range_label{
+        margin: 20px 0px 7px 0px;
+    }
+    
+    .advanced_select{
+        display: block;
+    }
+    
+    
+    .adv_search_submit .vernil{
+      background-color: #fff;
+      margin-left: 10px!important;
+    }
+
+   
+    /* ------------------------------------------------------------------- breadcrumbs */
+    #breadcrumbs_wrapper{
+        display:none;
+    }
+    #breadcrumbs_container,
+    .breadcrumbs-internal,
+    .breadcrumbs{
+        display:none;
+    }
+
+    .footer_breadcrumbs,
+    .footer_breadcrumbs_insider {
+        display:none;
+    }
+
+
+    /* ------------------------------------------------------------------- widgets */
+
+    .widget_search{
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+        width: 95%!important;
+        margin-left: 10px; 
+    }
+
+    #submit-form{
+        float:right;
+        margin-right: 10px;
+    }
+    
+    .social_sidebar{
+        margin-left: 0px;
+    }
+    .social_sidebar img:first-child,
+    .social_sidebar h3{
+        margin-left: 10px;
+    }
+    
+    .mortgage_calculator_div{
+        width:220px; 
+        margin-left: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        clear: both;
+    }
+    
+    .mortgage_calculator_div .submiter{
+        max-width: 100%;
+    }
+
+    .mortgage_calculator_div h2 {
+        max-width: 250px;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+
+    #input_formula{
+        max-width: 200px;
+        margin: 0px auto;
+    }
+
+    .mortgage_calculator_div label{
+        width:100%;
+    }
+
+    #footer-widget-area{
+        padding:10px 0px 10px 0px;
+    }
+  
+    .textwidget, 
+    .tagcloud{
+        margin-left: 10px;
+    }
+    
+    .widget_recent_comments ul,
+    .widget_archive ul,
+    .widget_meta ul,
+    .widget_calendar,
+    .widget_pages ul,
+    .widget_categories ul,
+    .wpestate_recent_tweets,
+    .widget_recent_entries ul,
+    .widget-container.twitter h3, 
+    .sbg_widget.twitter h3,
+    .flickr_widget_internal,
+    #primary .contact_sidebar div,
+    .facebook_widget_like{
+        margin-left: 10px;
+    }
+    .facebook_widget_like{
+        max-width: 220px;
+    }
+    #footer-widget-area {
+        margin-top: 0px;
+    }
+    
+    
+    /* ------------------------------------------------------------------- blog list*/
+    .inside_post {
+        padding-top: 30px;
+    }
+    
+    .blog_listing{
+        width: auto;
+        border:none;
+    }
+    
+    .blog_listing .blog_author_image{
+        display:none;
+    }
+
+    .listing_excerpt,
+    .noshadow .listing_excerpt{
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .shadowonright .listing_excerpt{
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .blog_listing .wp-post-image {
+        float:left;
+        margin-left:10px;
+    }
+    
+    .read_more_blog{
+        padding-left: 10px;
+        width: auto;
+        bottom: 5px;
+    }
+    
+    .blog_listing_image{
+        float:left;
+        margin-top: 20px;
+    }
+    
+    .post-meta-list{
+        margin-left: 10px;
+        margin-top: 5px;
+        line-height: 1.3em;
+    }
+    /* ------------------------------------------------------------------- single blog*/
+    .single-content,
+    .shadowonright .single-content {
+        margin: 0px 0px 0px 0px;
+    }
+    .single-content ul{
+        width:100%;
+        float:left;
+    }
+    
+    .meta-info{
+        width:auto;
+        padding-left: 10px;
+    }
+
+    .blog_category{
+        width:100%;
+        border: none;
+        margin-top: 20px;
+        display: block; 
+        padding: 0px;
+    }
+
+    .blog_social{
+        float:left;
+    }
+    .social_facebook{
+        margin-left: 0px;
+    }
+
+    #respond,
+    .fullwhite #respond,
+    .shadowonright #respond {
+       padding: 0px;
+       width: 100%;
+    }
+
+    .shadowonright #comments h3{
+        padding-left: 0px;
+        line-height: 1.2em;
+    }
+
+    .noshadow #comments {
+        width:100%;
+    }
+    
+    .shadowonright .entry-title {
+        padding-left: 10px;
+    }
+    
+    .shadowonright .alpha .col-keeper>p {
+        padding-left: 10px!important;
+        margin-left: 0px!important;
+    }
+    .shadowonright .none {
+        padding-left: 0px;
+    }
+    
+    .shadowonright .alpha >h1{
+         padding-left: 10px!important;
+    }
+    .listing_excerpt p {
+        margin-bottom: 3px;
+    }
+    
+    /* ------------------------------------------------------------------- single */
+    
+    #post{
+        padding-top: 0px;
+    }
+    .navigational_links {
+        padding-left: 10px;
+        width:auto;
+    }
+    .navigational_links a{
+        margin-right: 20px;        
+    }
+  
+    .nav-next{
+        width:auto;
+    }
+    
+    .single-content p {
+        float:left;
+        width:100%;
+    }
+    
+    .blog_category_mobile{
+     display:block;  
+     float: left;
+    }
+
+    .anchor-bord{
+        display:none; 
+    }
+
+    .shadowonright .sixprop,
+    .fullwhite .sixprop{
+        width:100%; 
+    }
+
+    .featured_agent_image{
+        margin: 22px 20px 22px 10px;
+    } 
+
+    .prop_details{
+        width:100%;   
+    }
+    
+    .prop_details:nth-of-type(odd){
+        margin-bottom: 0px;
+    }
+    
+    .shadowonright .prop_details{
+        width:100%;   
+    }
+    
+    .dottedlineblog,
+    .dottedline-agent,
+    .dottedline,
+    .fullwhite .dottedline{
+        width:100%;
+        margin:20px 0px;    
+    }
+
+    .shadowonright .dottedline {
+        margin-left: -10px;
+    }
+    
+    .featured_agent h2{
+        padding-left: 0px!important;
+    }
+    
+    .agent_listing-prop,
+    .fullwhite .agent_listing-prop{
+        width:100%;
+        float:left;
+        margin:0px;
+        border:none;
+    }
+    .shadowonright .agent_listing-prop{
+        width:100%;
+        float:left;
+        margin:0px;
+        margin-left: -30px;
+    }
+    
+    .related_posts{
+         width: 100%;
+    }
+    .shadowonright .related_posts{
+        padding-left: 0px;
+    }
+    
+    .related_posts {
+        border:none;
+    }
+    
+    .related_posts h1,
+    .related_posts h4,
+    .related_posts .blog_link{
+        padding-left: 10px!important;
+    }
+        
+    .agent_listing-prop 
+    .agent_contanct_form{
+        float: left;
+        margin: 0px;
+        padding: 10px 15px 10px 10px;
+    }
+    
+    .agent_listing-prop h4 {
+        margin: 11px 0px 20px 0px;  
+    }
+    
+    .my_other{
+        margin: 11px 0px 0px 10px;
+        width: 95%;
+    }
+
+    .agent_listing_prop_details{
+        margin:0px 0px 0px 0px;
+        width:100%;
+    }
+
+    
+    #reply-title,
+    #commentform{
+        padding-left: 10px!important;
+    }
+    
+    #commentform p{
+        margin-left: 0px;
+    }
+    
+    #comments h3 ,
+    .shadowonright #reply-title{
+        padding-top: 10px;
+        padding-left:10px!important;
+    }
+       
+    .comment-meta{
+         padding-left:10px;
+    }
+    
+    #respond input[type=text], 
+    #respond input[type=password], 
+    #respond input[type=email], 
+    #respond input[type=url], 
+    #respond input[type=number], 
+    #respond textarea{
+        width:90%;
+        display: block
+    } 
+    
+    .custom_slider:before,
+    .custom_slider:after,
+    .shadowonright .custom_slider:before,
+    .shadowonright .custom_slider:after,
+    .noshadow .custom_slider:before,
+    .noshadow .custom_slider:after{
+       background: none;
+    }
+    
+    .reply a{
+        margin-left: 70px;
+    }
+    
+    /* ------------------------------------------------------------------- listing */
+    .related_listings,
+    .shadowonright .related_listings,
+    .fullwhite .related_listings{
+        width:100%;
+        float:left;
+        margin:30px 0px;
+        border:none;
+    }
+    
+    .shadowonright .related_listings{
+        margin-left: -20px;
+    }
+    
+      .mobilenav{
+        display: block;
+        float: right;
+        margin-top: -90px;
+    }
+
+    .twoprop {
+        width:100%;
+        display: none;
+    }
+
+    .rentalspin,
+    .salespin,
+    .blankpin {
+        display:none;
+    }
+    
+    .thumbs_row{
+        width:100%;
+        padding-left: 2px;
+        position: relative;      
+        top:0px;
+        overflow: visible;
+        float: left;
+        height: 100%;
+        margin-top: 0px;    
+    }
+    
+    .shadowonright .thumbs_row{
+        margin-left:20px;
+    }
+    
+    .image_thumbs_row{
+       
+        float: left;
+        left: 0px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        height: 100%;
+        overflow: visible;
+        left: 0px!important;
+        position: relative;
+    }
+    .thumbs_row img{
+        margin: 0px 15px 15px 0px;
+    }
+
+    .sixprop{
+        width:100%; 
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .entry-title-prop,
+    .sixprop h4,
+    .under-title,
+    .prop_details ul,
+    .under-title-addres,
+    .related_listings h1,
+    .related_listings h3,
+     .properties_agent_notes{
+        padding-left: 10px;
+    }
+    
+    .google_icons{
+        margin-left: 10px;
+    }
+    
+    .properties_agent_notes h4{
+        padding-left: 0px!important;
+    }
+    
+    .article_property_type,
+    .property_price{
+        box-sizing: border-box;
+    }
+    
+    /* ------------------------------------------------------------------- footer */
+    .widget-title-footer{
+        padding-left: 0px!important;
+    }
+    
+    #site-generator{
+        width: auto;
+        padding-left: 10px;
+    }
+    .logo-footer{
+        padding-left: 10px;
+    }
+    /* ------------------------------------------------------------------- agent */
+    .entry-title-agent-page{
+        padding-left: 10px;
+    }
+    
+    .agent_content{
+        margin: 22px 0px 0px 10px;
+    }
+    
+    .agent_listing_details h3{
+        padding-left: 0px!important;
+    }
+    .agent_detail{
+     width:auto;   
+    }
+    .agent_listing h4 {
+        margin: 11px 20px 0px 10px;
+    }
+    .agent_contanct_form{
+        margin: 25px 20px 0px 10px;
+    }
+    #agent_submit,
+    #recaptcha_widget_div,
+    #recaptcha_area{
+        float:left;
+    }
+    
+    .agent_listing-prop .agent_title,
+    .agent_listing-prop .agent_detail{
+        margin-left: 10px;
+    }
+     
+    .noshadow .property_listing,
+    .property_listing{
+        width:100%;
+        height: 199px;
+        min-height: 170px;
+        margin-right: 0px;  
+     
+    }
+    
+    .agentstuff .property_listing {
+        min-height: 199px;
+        margin-bottom: 0px;
+    }
+    
+    .col.property_listing{
+        height:auto;
+        min-height: 10px!important;
+        margin-bottom: 0px;
+        width:100%!important;
+    
+    }
+
+    .property_listing_details{
+        margin-left: 20px;   
+        max-width: 230px; 
+    }
+    
+    .property_listing_details h3 {
+        margin-top: 0px;
+    }
+    
+    .property_listing a{
+        display: inline;
+    }
+    
+    .property_listing img {
+        margin-left: 10px;        
+    }
+    
+    .featured_div{
+        margin-left: 10px;
+    }
+    
+    #post figcaption{
+        display: none;
+    }
+    
+    .ribbon-wrapper-default,
+    .ribbon-wrapper-sold,
+    .ribbon-wrapper-open-house{
+        left:15px;
+    }
+    
+    .article_property_type,
+    .property_price,
+    .article_compare{
+        padding-left: 10px;
+    }
+    
+    .lastline{
+        width:230px;
+        margin: 0px;
+        padding: 0px;
+        bottom: 26px;
+    }
+    
+    .property_listing h3{
+        float: left;
+        display: inline;
+        clear: none;
+        margin-bottom: 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .property_listing h3 a {
+        margin-top: 0px;
+    }
+
+    .is_last {
+        float:left;
+        margin: 0px;
+    }
+
+    .featured_article:after,
+    .bottom-post:after,
+    .bottom-estate_property:after,
+    .agent_bottom_border:after,
+    .blog_bottom_border:after,
+    .featured_article:before,
+    .bottom-post:before,
+    .bottom-estate_property:before,
+    .agent_bottom_border:before,
+    .blog_bottom_border:before{
+        display: none;
+    }
+    
+    .agent_listing-prop .featured_agent_image{
+        margin-left: 10px;
+        margin-bottom: 22px;
+    }
+    /* ------------------------------------------------------------------- shortcodes */
+
+    .search_locations{
+        float:left;
+        display:inline;
+        width:100%;
+    }
+
+    .advanced_price{
+        width:auto;
+    }
+
+    .testimonial_inside_vertical {
+        width:auto;
+        margin-top: 0px;
+    }
+
+    .nobottom{
+        margin-bottom: 0px;
+    }
+
+    .featured_article.horizonal .listinglink{
+        display: none;
+    }
+
+    .listinglink{
+       margin-left: 10px!important; 
+    }
+    
+    
+    .featured_agent_details .listinglink,
+    .agent_listing_prop_details .listinglink{
+       margin-left: 0px!important; 
+    }
+    
+    .featured_agent_image_hover{
+        display: none;
+    }
+    
+    .featured_sidebar_intern{
+       width:100%;
+       box-shadow:none;
+       -webkit-box-shadow:none;
+       -moz-box-shadow: none;
+    }
+
+    .featured_article h1,
+    .featured_property h1 {
+        padding: 10px 0px 10px 10px;
+    }
+    
+    .featured_article_secondline,
+    .featured_secondline{
+       padding: 0px 0px 15px 10px;
+    }
+    
+    .horizonal .featured_article_content{
+        padding: 0px 0px 20px 60px;
+    }
+    
+    .featured_img:before{
+        display:none;
+    }
+    
+    .testimonial-container h3 {
+        padding-left: 0px!important;
+    }
+
+    .accordeonx,
+    .checklist,
+    .testimonial_slider,
+    .tabs{
+        margin-bottom: 30px;
+        float: left;
+    }
+    
+    .checklist{
+        margin-left: 10px;
+        width:100%;
+    }
+    
+    
+    .tagline_second{
+        padding-left: 10px;
+    }
+   
+    .tagline-icon{
+        display: none;
+    }
+    
+    #navigational_menu,#access{
+        display:none;
+    }	
+    
+    .recent_post_p{
+        width:95%;
+    }
+
+    #select_menu{
+        display: block !important;
+        width: 100%;
+        margin:0px auto;
+        padding:4px;
+    }
+
+    .logo-place {
+        text-align:center;
+        margin: 10px 0px 15px 0px;
+        width:100%;
+    }
+
+    .link_keeper{
+        width:100%;
+        margin-top:10px;
+        height: 100%!important;
+    }
+
+    #footer{
+        margin-bottom:0px;
+        float:left;
+    }
+
+    .footer-wrapper {
+        width:100%;
+    }
+
+    #footer-widget-area .widget-area {
+        width:100%!important;
+        height:100%!important;
+        margin-right:0px;
+        padding:0px;
+    }
+
+    #first,#fourth{
+        padding:0px!important;
+    }
+
+    .social-footer_container{
+        padding:0px 0px 0px 0px!important;
+        overflow: hidden;
+    }
+
+    #footer-widget-area {
+        overflow: initial;
+    }
+
+    .sidebar_tabs .tabs {
+        width:100%;
+    }
+
+    .tab-border-sidebar{
+        width:100%;
+    }
+
+    .Widget_Flickr .img_last{   
+        margin:0px 12px 12px 0px!important;
+    }  
+    
+    #colophon .Widget_Flickr .img_last{   
+        margin:0px 10px 10px 0px!important;
+    }   
+
+    .widget-container,
+    .sbg_widget {
+        width:100%;
+    }
+
+    .loginwd_sidebar{
+        width: 200px;
+        margin-left: 10px;
+        clear:both;
+    }
+    
+    #login-div-title{
+        padding-left: 0px!important;
+    }
+    
+    .zillow_widget,
+    .advanced_search_sidebar{
+        width: 220px;
+        margin-left: 10px;
+        clear:both;
+    }
+    
+    .widget_latest_internal{
+        height: auto;
+        background-color:transparent;
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+    
+    .widget_latest_internal img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .widget_latest_internal:hover{
+        background-color:transparent;
+    }
+    
+    .widget_latest_internal span{
+        float: left;
+        width: 100%;
+        margin-top: 10px!important;
+        font-size: 16px!important;
+    }
+    
+    .form-submit{
+        max-width:150px;
+    }
+
+    #facebook_wid{
+        width:100%!important;
+    }
+
+    #footer .columns {
+        padding: 5px 10px 5px 10px;
+    }
+
+    #footer-widget-area{
+        width: 100%!important;
+        height: 100%!important;
+    }
+
+    .xoxo{
+        padding:10px;
+    }
+
+    .wp-caption{
+        margin-left: 10px!important;
+        box-sizing: border-box;
+    }
+    
+    .wp-caption .wp-caption-text, .gallery-caption{
+        float: none;
+    }
+    
+    .wp-caption img {
+        margin: 0px;
+    }
+
+    .sliderbutton{
+        height:50px;
+        margin-bottom:10px;
+    }
+
+    #sidebar li {
+        width:100%; 
+    }
+
+
+    #sidebar_page{
+        float:left;
+    }
+
+    .current_page_item::before, .current_page_item::after{
+        content:none;
+    }
+
+    .back_top{
+        display:none;
+    }
+
+    .article_container article {
+        height:100%;
+        padding-bottom:5px!important;
+    }	
+
+    .article_container .last:hover .related_over{
+        right:auto;
+        left:10px;
+    }
+
+    #sidebar_page .current_page_item::before,
+    #sidebar_page .current_page_item::after{
+        display:none; 
+    }    
+
+    .medium_blog{
+        max-width: 100%;
+    }   
+
+    .lowerend-container{
+        width: 100%;
+        left:0px;
+    }
+    .lowerend{
+        width: 80%; 
+    }
+    .lowerlogo{
+        width: 100%;
+    }
+    .lower_social{
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .iconcol h3 {
+        padding-left: 10px;
+    }
+    
+    .icon_img{
+        margin-left: 10px;
+    }
+      
+    #advanced_search_map_form{
+        height:100%;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    
+    
+    #loginform,
+    #registerform{
+     margin-left: 10px;   
+    }
+    
+    #registerform p{
+        margin-left: 0px;
+    }
+    
+   
+}
+
+
+@media only screen and (max-width: 940px){
+    .info-container_booking {
+        float: left;
+        margin-top: 15px;
+        width: 50%;
+        height: auto;
+    }
+    
+    .info-container_booking span{
+        float:left;
+    }
+    
+    .invoice_table,
+    .invoice_details{
+        width: 100%;
+        max-width: 530px;
+        margin-right: 15px;
+    }
+    
+    #add_inv_expenses, #add_inv_discount {
+        float: left;
+        margin-bottom: 10px;
+    }
+    
+   
+}
+
+
+@media only screen and (max-width: 800px){
+    
+    
+     .create_invoice_form input[type=text], .create_invoice_form input[type=password], .create_invoice_form input[type=email], .create_invoice_form input[type=url], .create_invoice_form input[type=number], .create_invoice_form textarea {
+        float: left;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    
+    .info_details{
+        width:500px;
+        margin-top:-365px;
+    }
+    
+    .small-info{
+         width:500px;
+        margin-top:-358px;
+    }    
+  
+    #info_inside{
+        margin-bottom: 10px;
+    }
+    
+    .invoice_actions{
+        width:100%;
+    }
+    
+    .create_invoice_form input[type=text], .create_invoice_form input[type=password], .create_invoice_form input[type=email], .create_invoice_form input[type=url], .create_invoice_form input[type=number], .create_invoice_form textarea {
+        float: left;
+        margin-right: 10px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 790px){                                              
+    .adv_search_internal{
+       
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+  
+    
+    .adv_search_submit .vernil {
+        margin-left: 0px!important;
+    }
+   
+}
+
+
+@media only screen and (max-width: 767px){
+
+    .advanced_search_shortcode .adv_search_internal{
+        width:42%;
+    }
+    
+    .advanced_search_shortcode .check_out_adv,
+    .advanced_search_shortcode .check_in_adv,
+    .advanced_search_shortcode .search_where,
+    .advanced_search_shortcode .search_guest{
+        width: 50%!important;
+        display: block;
+        float: left;
+        padding-left: 12px;
+    }
+    
+    .advanced_search_shortcode .search_guest{
+        margin-left: 0px!important;
+    }
+    
+    .advanced_search_shortcode #booking_location_shortcode{
+        max-width: 100%; 
+    }
+    
+    .tagline_icon{
+        display: none;
+    }
+    
+    .agent_contanct_form{
+        width: 90%;
+    }
+
+    .top_slider{
+        margin-bottom:35px;
+    }
+    
+    .tabs ul {
+        height: auto;
+        float:left;
+        width:100%;
+    }
+    
+    .tabs .tabcontainer {
+        width:100%;
+        float:left;
+        box-sizing: border-box;
+    }
+    
+    
+    .tabs li {
+        width:100%!important;
+    }
+
+    .taglinetext{
+        width:auto;
+    }
+
+    .tagline_button{
+        float:none;
+        margin:0px;
+        padding:0px;
+    }
+    
+    .footer_social{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 710px){
+    
+  
+    
+        
+    .compare_legend_head{
+        display: none;
+    }
+    
+    .compare_item_head{
+        height: 260px!important;    
+    }
+    
+    .prop_value,
+    .compare_item_head,
+    .compare_legend_head_in{
+        width:100%!important;
+    }
+
+    
+    .listing_advanced_city_div,
+    .listing_advanced_area_div,
+    .listing_filter_div{
+        margin-left: 10px;
+        width:100%;
+    }
+}
+
+
+@media only screen and (max-width: 705px){
+    
+    .invoice_actions{
+        margin-top: 10px;   
+    }
+    
+    #add_inv_expenses, #add_inv_discount {
+        margin-bottom: 10px;
+        float: left;
+    }
+    
+    .dasboard-prop-listing .prop-info {
+        margin-left: 0px;
+        max-width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .dasboard-prop-listing .listing_title{
+        margin-top: 10px;
+          max-width: 100%;
+    }
+    
+    .agentstuff{
+        min-width:1px;
+    }
+
+    .under_title_reservation{
+         width: 65%;
+         margin-left: 10px;
+    }
+  
+}
+
+
+@media only screen and (max-width: 640px){
+   
+    .booking_form_request .full_form,
+    .booking_form_request .half_form {
+        width: 95%;
+    }
+    
+    #booking_guest_no{
+        width:100%;  
+        max-width: 422px;
+    }
+    
+    
+    .create_invoice_form h3{
+        padding-left: 0px!important;
+    }
+    
+    .header_legend .inv_exp{
+        display:none;
+    }
+    
+ 
+  
+    .deposit_show_wrapper{
+        margin-top:10px;
+    }
+    
+     .pack_description_unit{
+        width:49%;
+    }
+    
+    .user_dashboard_user_actions{
+        float:left;
+        margin-top: 15px;
+    }
+    
+    .user_tab_menu a {
+       width: 100%;
+        display: block;  
+        margin-bottom: 2px;
+        box-sizing: border-box;
+    }
+    
+    .user_tab_menu {
+        height: 100%;
+        border-bottom: none;
+    }
+    
+    .dasboard-prop-listing .prop-info{
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .dasboard-prop-listing .user_dashboard_listed,
+    .dasboard-prop-listing .user_dashboard_actions {
+        margin: 2px 0px;
+        float: left;
+        width: 100%;
+        position: relative;
+        bottom: auto;
+     }
+     
+     .dasboard-prop-listing .listing_title{
+         padding-left: 0px!important;
+     }
+    
+     .dasboard-prop-listing .blog_listing_image{
+         margin-bottom: 0px;
+     }
+     
+    .nav-prev,
+    .nav-next{
+        float:left;
+        width:100%;
+        text-align: left;
+    }
+
+    .comparetile{
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .items_compare{
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    
+    #submit_compare{
+        margin-left:10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .info_details{
+        width:400px;
+        margin-top:-325px;
+    }
+    
+    .small-info {
+        margin-top: -320px;
+    }
+    
+    #info_inside{
+        margin-bottom: 10px;
+    }
+    
+    .info_details h2 {     
+        line-height:1em;
+         padding:16px 0px 5px 0px;
+    }
+    
+   .info_details h2 a{
+        line-height:1em;
+    } 
+    
+    
+    .fullinfo .agent_listing_details{
+        margin: 22px 0px 0px 10px;
+    }
+    
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 525px){
+    
+    .booking_reservation_form .agent_listing_prop_details {
+        margin: 22px 0px 0px 0px;
+    }
+
+  
+    .add-estate p{
+        width:100%;
+    }
+    
+    .fullinfo .agent_listing_details {
+        margin: 50px 0px 0px 10px;
+    }
+   
+    .mobilenav{
+        display: block;
+        float: left;
+        margin: 0px 0px 20px 10px;
+    }
+   
+    .fullinfo .contact_detail_social{
+        padding-left: 0px;
+    }
+    
+    .agent_listing_details{
+        margin: 25px 0px 7px 20px;
+        width:90%;
+    }
+
+    .featured_agent_image{
+        margin: 22px 20px 0px 20px;
+    }
+
+    .agent_listing_link{
+        margin-left: 20px;
+        margin-top: 0px;
+        float: left;
+    }
+
+    .article_container  .related_over,
+    .article_container .col:hover .related_over{
+        display:none;
+    }
+
+    #carousel li:hover .mobile_hover{
+        display:block;
+    }
+
+    .keeper .col{
+        width: 100%;
+        margin-bottom:30px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+
+    .advanced_search_shortcode .check_out_adv,
+    .advanced_search_shortcode .check_in_adv,
+    .advanced_search_shortcode .search_where,
+    .advanced_search_shortcode .search_guest{
+        width: 70%!important;
+    }
+    
+    .adv-search-mobile{
+        height:480px;
+        height:auto;
+    }
+    
+   
+    
+    #carousel li:hover .mobile_hover{
+        display:block;
+        top:0;
+    }
+
+    .noshadow .property_listing,
+    .property_listing{
+        min-height: 330px;  
+        margin: 0px auto;
+        width: 240px;
+        margin-bottom: 22px!important;
+        height: auto!important;
+    }
+    
+    .agentstuff .property_listing:nth-of-type(3n), #listing_ajax_container .property_listing:nth-of-type(3n) {
+        margin-right: 0px!important;
+        float: left;
+    }
+
+
+    .property_listing_details {
+        margin-left: 0px;
+    }
+    
+    .lastline{
+        bottom: 0px;
+        margin: 0px 10px;
+        width: 210px;
+    }
+    
+    
+    
+    .property_listing h3{
+     margin-top:15px;   
+    }
+    
+    .agentborder p{
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 479px){
+    
+    .user_dashboard_user_actions {
+        width: auto;
+    }
+    
+    #control_next,#control_prev{
+        display:none!important;
+    }
+
+    .btn {
+        display:inline-block;
+    }
+
+    .featured_agent_details{
+        margin-left: 20px;
+    }
+
+    .testimonial-container h3,
+    .testimonial-author,
+    .testimonial-container p {
+        margin-left: 10px!important;
+    }
+    
+    .testimonial-container h3{
+        padding-left: 0px!important;
+    }
+    
+    .testimonial_from,
+    .featured_agent_image{
+        margin-left: 10px;
+    }
+    
+    .add-estate textarea{
+        width: 95%;
+    }
+    
+    #form_submit_1{
+        clear: both;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px){
+    .advanced_search_shortcode .adv_search_internal{
+        width:90%;
+    }
+    
+    .pack_description_unit{
+        width:100%;
+    }
+    
+   .features_listing_div{
+        width: 90%;
+        margin-left: 10px;
+    }
+   .info_details{
+        width:250px;
+        margin-top:-230px;
+    }   
+    
+    .small-info {
+        margin-top: -255px;
+    }
+
+    .info_details.idx-container {
+          width:250px;
+    }
+    
+    #infobox_title{
+        font-size:18px;
+        line-height:1em;
+        padding: 10px 0px 5px 10px;
+    } 
+    
+    .info_details .prop_details{
+        padding: 0px;
+    }
+        
+    #info_inside{
+        font-size:15px!important; 
+        padding-left: 10px;
+        font-weight: 300!important;
+        margin-bottom: 10px;
+    }
+   
+    .slider-wrapper{
+        display: none;
+    }
+    
+   
+}
+
+
+
+@media only screen and (max-width: 340px){
+    #recaptcha_area, #recaptcha_table {
+        width:100%!important;
+        margin-left: -10px;
+    }
+
+}

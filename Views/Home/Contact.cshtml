@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_HomePageLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+
+
+
+<title></title>
+    </head>
+    <body>
+         <div class="gmap_wrapper gmap_not_home aaa" style="height: 295px;">
+            <div id="googleMap" style="height: 295px;">
+            </div>
+        </div>
+        <div id="wrapper" class="">
+            <div class="whiteonleft"></div>
+            <div id="breadcrumbs_wrapper" class=" "></div>
+            <div id="main" class="row right">
+                <div class="breadcrumbs-internal ">
+                    <a href="../index.html">Home</a><span class="bread_arrows">&raquo;</span><span class="bread_selected">Contact Page</span><div class="map_opener" id="openmap">enlarge map</div>
+                </div>
+                <!-- begin content-->
+                <div id="post" class="agentborder nine columns alpha shadowonleft">
+                    <div class="inside_post inside_no_border">
+                        <h1 class="entry-title title_prop">Contact Page</h1>
+                        <div class="agent_listing fullinfo agent_bottom_border">
+                            <div class="featured_agent_image" style="background-image: url('../wp-content/uploads/2013/07/logo.jpg');">
+                                <div class="featured_agent_image_hover">
+                                    <span>Business Name</span>
+                                </div>
+                                <div class="contact_detail_social"><a href="https://www.facebook.com/wpestate" class="social_facebook"></a><a href="https://twitter.com/WPESTATE" class="social_tweet"></a><a href="https://plus.google.com/u/0/112306178370763368843/posts" class="social_google"></a></div>
+                            </div>
+                            <div class="agent_listing_details contact_details">
+                                <div class="contact_detail"><a href="tel:(305) 555-4446">Phone: (305) 555-4446</a></div>
+                                <div class="contact_detail">Fax: (305) 555-4446</div>
+                                <div class="contact_detail">Email: <a href="mailto:annapx0909@gmail.com">annapx0909@gmail.com</a></div>
+                                <div class="contact_detail">Skype: wpestatetheme</div>
+                                <div class="contact_detail contact_addres">Address: 3C, Building 4326 Arlington Business Park Theale C1, Center Berkshire RS1 5A1, England</div>
+                            </div>
+                            <div class="agent_content">We offer our clients a wealth of knowledge regarding all aspects of purchasing or selling a home. Whether it is helping you search for your dream home, discussing new New York real estate developments, or assisting with the sale of your property, we would love the opportunity to help. Please feel free to contact us with any questions!</div>
+                            <div class="agent_contanct_form">
+                                <div class="alert-box error">
+                                    <div class="alert-message" id="alert-agent-contact"></div>
+                                </div>
+                                <input name="contact_name" id="agent_contact_name" type="text" placeholder="Your Name" aria-required="true">
+                                <input type="text" name="email" id="agent_user_email" aria-required="true" placeholder="Your Email">
+                                <input type="text" name="phone" id="agent_phone" placeholder="Your Phone">
+                                <textarea id="agent_comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="Your Message"></textarea>
+                                <input name="submit" type="submit" class="btn white small" id="agent_submit" value="Send Message">
+                                <input name="prop_id" type="hidden" id="agent_property_id" value="0">
+                                <input name="agent_email" type="hidden" id="agent_email" value="annapx0909@gmail.com">
+                                <input type="hidden" name="contact_ajax_nonce" id="agent_property_ajax_nonce" value="0081aa4933" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end inside post-->
+                </div>
+                <!-- end  post-->
+                <!-- end content-->
+                <!-- begin sidebar -->
+                <div id="primary" class="widget-area-sidebar three columns omega">
+                    <ul class="xoxo">
+                        <li id="contact_widget-9" class="widget sbg_widget contact contact_sidebar">
+                            <h3 class="widget-title-sidebar">Contact Widget</h3>
+                            <div class="contact_sidebar">
+                                <p class="widget_contact_addr">3C, Building 4326 Arlington Business Park Theale C1, Center Berkshire RS1 5A1</p>
+                                <p class="widget_contact_phone"><a href="tel:(305) 555-4446">(305) 555-4446</a></p>
+                                <p class="widget_contact_fax">(305) 555-4447</p>
+                                <p class="widget_contact_email"><a href="mailto:address@gmail.com">address@gmail.com</a></p>
+                                <p class="widget_contact_skype">wpestate</p>
+                                <p class="widget_contact_url"><a href="http://themeforest.net/item/wp-estate-responsive-wordpress-theme/5042235?ref=annapx">Buy WP Estate</a></p>
+                            </div>
+                        </li>
+                        <li id="facebook_widget-11" class="widget sbg_widget contact facebook_widget_like">
+                            <iframe id="facebook_wid" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fwpestate&amp;width=220&amp;height=260&amp;colorscheme=&amp;show_faces=true&amp;stream=false&amp;header=false&amp;" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 220px; height: 260px; background-color: white;" allowtransparency="true"></iframe>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end sidebar -->
+            </div>
+            <!-- #main -->
+        </div>
+
+
+    </body>
+
+
+
+</html> 

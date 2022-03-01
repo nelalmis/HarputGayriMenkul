@@ -1,0 +1,452 @@
+HTTrack3.48-21+htsswf+htsjava launched on Thu, 07 Jan 2016 08:29:37 at http://wpestatetheme.org/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "tr, en, *" http://wpestatetheme.org/ -O1 "C:\Users\nevzat\Desktop\EmlakPages" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+08:29:41	Warning: 	Note: due to wpestatetheme.org remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+08:31:10	Error: 	"Method Not Allowed" (405) at link wpestatetheme.org/xmlrpc.php (from wpestatetheme.org/)
+08:32:02	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/ (from wpestatetheme.org/)
+08:32:02	Warning: 	Moved Temporarily for wpestatetheme.org/dashboard/
+08:32:02	Warning: 	File has moved from wpestatetheme.org/dashboard/ to http://wpestatetheme.org
+08:32:02	Warning: 	Moved Temporarily for wpestatetheme.org/new-property/
+08:32:02	Warning: 	File has moved from wpestatetheme.org/new-property/ to http://wpestatetheme.org/url
+08:54:40	Error: 	"Not Found" (404) at link wpestatetheme.org/property_city/new-jersey/ (from wpestatetheme.org/)
+08:56:40	Error: 	"Not Found" (404) at link wpestatetheme.org/agents-list/ (from wpestatetheme.org/)
+08:57:19	Error: 	"Not Found" (404) at link localhost/images/dsidxpress/map-hover-divet.png (from wpestatetheme.org/wp-content/plugins/dsidxpress/dsidxwidgets/css/client.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/css-images/sur-icon.png (from wpestatetheme.org/wp-content/themes/wpestate/style.css?ver=1.0)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/css-images/bed-icon.png (from wpestatetheme.org/wp-content/themes/wpestate/style.css?ver=1.0)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/css-images/bath-icon.png (from wpestatetheme.org/wp-content/themes/wpestate/style.css?ver=1.0)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/css-images/link-corner.png (from wpestatetheme.org/wp-content/themes/wpestate/style.css?ver=1.0)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/css-images/compare-corner.png (from wpestatetheme.org/wp-content/themes/wpestate/style.css?ver=1.0)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/images/comment-bubble.png (from wpestatetheme.org/wp-content/themes/wpestate/style.css?ver=1.0)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/animated-overlay.gif (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/ui-bg_diagonals-thick_18_b81900_40x40.png (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/ui-icons_222222_256x240.png (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/ui-icons_ef8c08_256x240.png (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/ui-icons_228ef1_256x240.png (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/ui-icons_ffd27a_256x240.png (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/ui-bg_diagonals-thick_20_666666_40x40.png (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:34	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/images/ui-bg_flat_10_000000_40x100.png (from wpestatetheme.org/wp-content/themes/wpestate/css/jquery-ui.min.css?ver=4.3.2)
+08:57:35	Error: 	"Not Found" (404) at link wpestatetheme.org/url (from wpestatetheme.org/new-property/)
+08:57:35	Warning: 	Moved Permanently for wpestatetheme.org/?p=4843
+08:57:35	Warning: 	File has moved from wpestatetheme.org/?p=4843 to http://wpestatetheme.org/login/
+08:57:35	Warning: 	Moved Permanently for wpestatetheme.org/?p=4845
+08:57:35	Warning: 	File has moved from wpestatetheme.org/?p=4845 to http://wpestatetheme.org/register/
+08:57:35	Warning: 	Moved Permanently for wpestatetheme.org/?p=1211
+08:57:35	Warning: 	File has moved from wpestatetheme.org/?p=1211 to http://wpestatetheme.org/homepage-v2/
+08:57:37	Warning: 	Moved Permanently for wpestatetheme.org/?p=5774
+08:57:37	Warning: 	File has moved from wpestatetheme.org/?p=5774 to http://wpestatetheme.org/homepage-v3/
+09:11:52	Warning: 	Moved Permanently for wpestatetheme.org/?p=3445
+09:11:52	Warning: 	File has moved from wpestatetheme.org/?p=3445 to http://wpestatetheme.org/homepage-4/
+09:11:52	Warning: 	Moved Permanently for wpestatetheme.org/icon-content-box/
+09:11:52	Warning: 	File has moved from wpestatetheme.org/icon-content-box/ to http://wpestatetheme.org/icon-content-box-shortcode/
+09:12:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=5081
+09:12:06	Warning: 	File has moved from wpestatetheme.org/?p=5081 to http://wpestatetheme.org/homepage-v5/
+09:12:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=4879
+09:12:06	Warning: 	File has moved from wpestatetheme.org/?p=4879 to http://wpestatetheme.org/homepage-with-revolution-slider/
+09:15:54	Warning: 	Moved Permanently for wpestatetheme.org/?p=4724
+09:15:54	Warning: 	File has moved from wpestatetheme.org/?p=4724 to http://wpestatetheme.org/homepage-with-header-image/
+09:15:54	Warning: 	Moved Permanently for wpestatetheme.org/?p=5198
+09:15:54	Warning: 	File has moved from wpestatetheme.org/?p=5198 to http://wpestatetheme.org/homepage-v8/
+09:15:54	Warning: 	Moved Permanently for wpestatetheme.org/?p=4504
+09:15:54	Warning: 	File has moved from wpestatetheme.org/?p=4504 to http://wpestatetheme.org/homepage-v9/
+09:15:55	Warning: 	Moved Permanently for wpestatetheme.org/?p=3443
+09:15:55	Warning: 	File has moved from wpestatetheme.org/?p=3443 to http://wpestatetheme.org/homepage-v10/
+09:15:55	Warning: 	Moved Permanently for wpestatetheme.org/?p=4685
+09:15:55	Warning: 	File has moved from wpestatetheme.org/?p=4685 to http://wpestatetheme.org/properties-list/
+09:16:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=7410
+09:16:12	Warning: 	File has moved from wpestatetheme.org/?p=7410 to http://wpestatetheme.org/properties-list-no-sidebar/
+09:16:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=360
+09:16:12	Warning: 	File has moved from wpestatetheme.org/?p=360 to http://wpestatetheme.org/properties/central-park-view/
+09:16:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=384
+09:16:12	Warning: 	File has moved from wpestatetheme.org/?p=384 to http://wpestatetheme.org/properties/condo-240-w-98th-street/
+09:16:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=5455
+09:16:12	Warning: 	File has moved from wpestatetheme.org/?p=5455 to http://wpestatetheme.org/properties/apartment-for-sale/
+09:16:33	Warning: 	Moved Permanently for wpestatetheme.org/?p=5985
+09:16:33	Warning: 	File has moved from wpestatetheme.org/?p=5985 to http://wpestatetheme.org/recent-listings-shortcode/
+09:20:49	Warning: 	Moved Permanently for wpestatetheme.org/?p=6008
+09:20:49	Warning: 	File has moved from wpestatetheme.org/?p=6008 to http://wpestatetheme.org/recent-listings-v2/
+09:20:49	Warning: 	Moved Permanently for wpestatetheme.org/?p=8492
+09:20:49	Warning: 	File has moved from wpestatetheme.org/?p=8492 to http://wpestatetheme.org/featured-property-elements/
+09:34:07	Warning: 	Moved Permanently for wpestatetheme.org/?p=4690
+09:34:07	Warning: 	File has moved from wpestatetheme.org/?p=4690 to http://wpestatetheme.org/agent-list/
+09:34:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=6079
+09:34:12	Warning: 	File has moved from wpestatetheme.org/?p=6079 to http://wpestatetheme.org/featured-agent/
+09:34:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=90
+09:34:12	Warning: 	File has moved from wpestatetheme.org/?p=90 to http://wpestatetheme.org/agents/sophie-douglas/
+09:34:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=5958
+09:34:12	Warning: 	File has moved from wpestatetheme.org/?p=5958 to http://wpestatetheme.org/make-registered-users-agents/
+09:34:12	Warning: 	Moved Permanently for wpestatetheme.org/?p=4696
+09:34:12	Warning: 	File has moved from wpestatetheme.org/?p=4696 to http://wpestatetheme.org/blog-list/
+09:34:38	Warning: 	Moved Permanently for wpestatetheme.org/?p=1019
+09:34:38	Warning: 	File has moved from wpestatetheme.org/?p=1019 to http://wpestatetheme.org/full-width-post/
+09:34:42	Warning: 	Moved Permanently for wpestatetheme.org/?p=1008
+09:34:42	Warning: 	File has moved from wpestatetheme.org/?p=1008 to http://wpestatetheme.org/sidebar-on-the-left/
+09:34:42	Warning: 	Moved Permanently for wpestatetheme.org/?p=993
+09:34:42	Warning: 	File has moved from wpestatetheme.org/?p=993 to http://wpestatetheme.org/sidebar-on-the-right/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=6003
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=6003 to http://wpestatetheme.org/recent-articles/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=8497
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=8497 to http://wpestatetheme.org/featured-article-examples/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=4714
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=4714 to http://wpestatetheme.org/contact-page/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=7996
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=7996 to http://wpestatetheme.org/pay-with-stripe-or-paypal/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=7396
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=7396 to http://wpestatetheme.org/header-styles/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=4901
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=4901 to http://wpestatetheme.org/pins-icons-management/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=1054
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=1054 to http://wpestatetheme.org/google-maps-properties-search/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=5526
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=5526 to http://wpestatetheme.org/google-maps-zoom-control/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=4957
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=4957 to http://wpestatetheme.org/geolocation/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=4734
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=4734 to http://wpestatetheme.org/google-street-camera-angle-control/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=504
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=504 to http://wpestatetheme.org/columns-shortcode/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=8503
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=8503 to http://wpestatetheme.org/testimonials-shortcode/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=8506
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=8506 to http://wpestatetheme.org/elements-shortcodes/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=8509
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=8509 to http://wpestatetheme.org/icon-content-box-shortcode/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=539
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=539 to http://wpestatetheme.org/lists/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=597
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=597 to http://wpestatetheme.org/tagline/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=793
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=793 to http://wpestatetheme.org/typography/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=927
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=927 to http://wpestatetheme.org/video/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=5645
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=5645 to http://wpestatetheme.org/advanced-search-custom-fields/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=5642
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=5642 to http://wpestatetheme.org/property-custom-fields/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=2424
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=2424 to http://wpestatetheme.org/unlimited-colors/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=1155
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=1155 to http://wpestatetheme.org/translation-module/
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=7383
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=7383 to http://wpestatetheme.org/custom-widgets/
+09:34:43	Error: 	"Not Found" (404) at link wpestatetheme.org/custom-widgets/www.domain.com (from wpestatetheme.org/custom-widgets/)
+09:34:43	Warning: 	Moved Permanently for wpestatetheme.org/?p=4750
+09:34:43	Warning: 	File has moved from wpestatetheme.org/?p=4750 to http://wpestatetheme.org/idx-how-it-works/
+09:36:26	Warning: 	Moved Permanently for wpestatetheme.org/?p=4741
+09:36:26	Warning: 	File has moved from wpestatetheme.org/?p=4741 to http://wpestatetheme.org/idx-listings-shortcode/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=4743
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=4743 to http://wpestatetheme.org/idx-single-listing-shortcode/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=440
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=440 to http://wpestatetheme.org/properties/retail-space-in-west-side/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=267
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=267 to http://wpestatetheme.org/properties/special-offer-brooklyn-ny/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=6402
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=6402 to http://wpestatetheme.org/properties/lake-view-manhattan/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=462
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=462 to http://wpestatetheme.org/properties/6-stall-horse-barn-shop/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=409
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=409 to http://wpestatetheme.org/properties/open-house-south-central/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=5303
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=5303 to http://wpestatetheme.org/properties/619-dartmouth-st/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=308
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=308 to http://wpestatetheme.org/properties/merchant-stores-building-upper-east-side/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=300
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=300 to http://wpestatetheme.org/properties/10-stories-building-madison-avenue/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=12
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=12 to http://wpestatetheme.org/google-maps-advanced-search/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=24
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=24 to http://wpestatetheme.org/custom-post-page-for-properties/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=1709
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=1709 to http://wpestatetheme.org/unlimited-colors-available/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=1158
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=1158 to http://wpestatetheme.org/fully-responsive-theme/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=2448
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=2448 to http://wpestatetheme.org/custom-theme-options/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=5938
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=5938 to http://wpestatetheme.org/properties/beautiful-island-house/
+09:37:05	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/themes/wpestate/css/css/css-images/idxdefault.jpg (from wpestatetheme.org/wp-content/themes/wpestate/css/idxpro.css)
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=1174
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=1174 to http://wpestatetheme.org/manhattan-apartments/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=93
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=93 to http://wpestatetheme.org/agents/jonas-barlow/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=45
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=45 to http://wpestatetheme.org/agents/lorelei-gilmore/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=454
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=454 to http://wpestatetheme.org/properties/6-acre-lake-property/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=430
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=430 to http://wpestatetheme.org/properties/restaurant-upper-east-side/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=416
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=416 to http://wpestatetheme.org/properties/boutique-space-in-manhattan/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=399
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=399 to http://wpestatetheme.org/properties/condo-in-financial-district/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=376
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=376 to http://wpestatetheme.org/properties/2-bedrooms-3rd-avenue/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=353
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=353 to http://wpestatetheme.org/properties/private-lake-in-center-manhattan/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=343
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=343 to http://wpestatetheme.org/properties/land-in-central-park/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=335
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=335 to http://wpestatetheme.org/properties/land-on-1st-ave-new-york/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=327
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=327 to http://wpestatetheme.org/properties/factory-on-thompson-road/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=318
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=318 to http://wpestatetheme.org/properties/dellas-graphics-middletown-new-york/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=4207
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=4207 to http://wpestatetheme.org/selling-new-york-property/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=168
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=168 to http://wpestatetheme.org/properties/3-room-condo-central-park/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=289
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=289 to http://wpestatetheme.org/properties/5-9-east-42-street-new-york/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=277
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=277 to http://wpestatetheme.org/properties/office-space-590-central-ave/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=237
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=237 to http://wpestatetheme.org/properties/offices-in-southwark/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=79
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=79 to http://wpestatetheme.org/agents/michael-rutter/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=1143
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=1143 to http://wpestatetheme.org/widgets-shortcodes/
+09:37:05	Warning: 	Moved Permanently for wpestatetheme.org/?p=1126
+09:37:05	Warning: 	File has moved from wpestatetheme.org/?p=1126 to http://wpestatetheme.org/video-in-slider/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=113
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=113 to http://wpestatetheme.org/properties/family-house-upper-east-side/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=44
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=44 to http://wpestatetheme.org/properties/11-stonewall-ct-11/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=125
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=125 to http://wpestatetheme.org/properties/51-acre-horse-property/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=258
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=258 to http://wpestatetheme.org/properties/villa-in-rego-park-ny/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=201
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=201 to http://wpestatetheme.org/properties/steel-factory-in-new-york/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=149
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=149 to http://wpestatetheme.org/properties/queens-retail-opportunity/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=98
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=98 to http://wpestatetheme.org/properties/apartment-on-park-avenue/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=35
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=35 to http://wpestatetheme.org/properties/villa-on-washington-avenue/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=5941
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=5941 to http://wpestatetheme.org/agents/annapx0909/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=86
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=86 to http://wpestatetheme.org/agents/janet-richmond/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=179
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=179 to http://wpestatetheme.org/why-live-in-new-york/
+09:37:06	Warning: 	Moved Permanently for wpestatetheme.org/?p=1109
+09:37:06	Warning: 	File has moved from wpestatetheme.org/?p=1109 to http://wpestatetheme.org/images-in-post/
+09:37:06	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148875 (from wpestatetheme.org/idx/mls-20649417-18_sunny_st_irvine_ca_92620)
+09:37:06	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649417 (from wpestatetheme.org/idx/mls-20649417-18_sunny_st_irvine_ca_92620)
+09:37:06	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148878 (from wpestatetheme.org/idx/city/irvine/)
+09:37:16	Error: 	"Forbidden" (403) at link 2.idx-pics.diverse-cdn.com/554/206495038/0-full.jpg (from wpestatetheme.org/idx/city/irvine/)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148877 (from wpestatetheme.org/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649469 (from wpestatetheme.org/idx/mls-20649469-100_sunny_st_newport_beach_ca_92707)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148879 (from wpestatetheme.org/idx/mls-20649468-99_sunny_st_newport_beach_ca_92663)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649468 (from wpestatetheme.org/idx/mls-20649468-99_sunny_st_newport_beach_ca_92663)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148880 (from wpestatetheme.org/idx/mls-20649470-98_sunny_st_newport_beach_ca_92663)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649470 (from wpestatetheme.org/idx/mls-20649470-98_sunny_st_newport_beach_ca_92663)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148882 (from wpestatetheme.org/idx/mls-20649467-97_sunny_st_newport_beach_ca_92663)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649467 (from wpestatetheme.org/idx/mls-20649467-97_sunny_st_newport_beach_ca_92663)
+09:37:23	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148893 (from wpestatetheme.org/idx/)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148894 (from wpestatetheme.org/idx/mls-20649415-16_sunny_st_laguna_beach_nv_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649415 (from wpestatetheme.org/idx/mls-20649415-16_sunny_st_laguna_beach_nv_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148897 (from wpestatetheme.org/idx/mls-20649419-20_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649419 (from wpestatetheme.org/idx/mls-20649419-20_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148899 (from wpestatetheme.org/idx/mls-20649421-22_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649421 (from wpestatetheme.org/idx/mls-20649421-22_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148904 (from wpestatetheme.org/idx/mls-20649420-21_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649420 (from wpestatetheme.org/idx/mls-20649420-21_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148906 (from wpestatetheme.org/idx/mls-20649422-23_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649422 (from wpestatetheme.org/idx/mls-20649422-23_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148908 (from wpestatetheme.org/idx/mls-20649423-24_sunny_st_laguna_beach_nv_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649423 (from wpestatetheme.org/idx/mls-20649423-24_sunny_st_laguna_beach_nv_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148911 (from wpestatetheme.org/idx/mls-20649424-25_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649424 (from wpestatetheme.org/idx/mls-20649424-25_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148913 (from wpestatetheme.org/idx/mls-20649425-26_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649425 (from wpestatetheme.org/idx/mls-20649425-26_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148916 (from wpestatetheme.org/idx/mls-20649426-27_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649426 (from wpestatetheme.org/idx/mls-20649426-27_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148917 (from wpestatetheme.org/idx/mls-20649477-28_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649477 (from wpestatetheme.org/idx/mls-20649477-28_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148920 (from wpestatetheme.org/idx/mls-20649501-29_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649501 (from wpestatetheme.org/idx/mls-20649501-29_sunny_st_laguna_beach_ca_92651)
+09:38:52	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452148922 (from wpestatetheme.org/idx/city/laguna-beach/?idx-q-ListingStatuses=Active%2cConditional&idx-q-PropertyTypes<0>=1030&idx-q-PropertyTypes<1>=1031&idx-q-PropertyTypes<2>=1032&idx-d-SortOrders<0>-Column=DateAdded&idx-d-SortOrders<0>-Direction=ASC)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152081 (from wpestatetheme.org/idx/mls-20649418-19_sunny_st_irvine_ca_92620)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649418 (from wpestatetheme.org/idx/mls-20649418-19_sunny_st_irvine_ca_92620)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152083 (from wpestatetheme.org/idx/mls-20649414-14_sunny_st_irvine_ca_92620)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649414 (from wpestatetheme.org/idx/mls-20649414-14_sunny_st_irvine_ca_92620)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152086 (from wpestatetheme.org/idx/mls-20649416-17_sunny_st_irvine_ca_92620)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649416 (from wpestatetheme.org/idx/mls-20649416-17_sunny_st_irvine_ca_92620)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152089 (from wpestatetheme.org/idx/mls-20649413-13_sunny_st_irvine_ca_92618)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649413 (from wpestatetheme.org/idx/mls-20649413-13_sunny_st_irvine_ca_92618)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152091 (from wpestatetheme.org/idx/mls-20649412-12_sunny_st_irvine_fl_92618)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649412 (from wpestatetheme.org/idx/mls-20649412-12_sunny_st_irvine_fl_92618)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152093 (from wpestatetheme.org/idx/mls-20649409-9_sunny_st_irvine_ca_92614)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649409 (from wpestatetheme.org/idx/mls-20649409-9_sunny_st_irvine_ca_92614)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152096 (from wpestatetheme.org/idx/mls-20649411-11_sunny_st_irvine_ca_92614)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649411 (from wpestatetheme.org/idx/mls-20649411-11_sunny_st_irvine_ca_92614)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152098 (from wpestatetheme.org/idx/mls-20649410-10_sunny_st_irvine_ca_92612)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649410 (from wpestatetheme.org/idx/mls-20649410-10_sunny_st_irvine_ca_92612)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152101 (from wpestatetheme.org/idx/mls-20649408-8_sunny_st_irvine_ca_92606)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649408 (from wpestatetheme.org/idx/mls-20649408-8_sunny_st_irvine_ca_92606)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152103 (from wpestatetheme.org/idx/mls-20649407-7_sunny_st_irvine_ca_92604)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649407 (from wpestatetheme.org/idx/mls-20649407-7_sunny_st_irvine_ca_92604)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152106 (from wpestatetheme.org/idx/mls-206495038-15_sunny_st_irvine_ca_92604)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=206495038 (from wpestatetheme.org/idx/mls-206495038-15_sunny_st_irvine_ca_92604)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152108 (from wpestatetheme.org/idx/mls-20649406-6_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649406 (from wpestatetheme.org/idx/mls-20649406-6_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152110 (from wpestatetheme.org/idx/mls-20649503-5_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649503 (from wpestatetheme.org/idx/mls-20649503-5_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152113 (from wpestatetheme.org/idx/mls-20649404-4_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649404 (from wpestatetheme.org/idx/mls-20649404-4_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152116 (from wpestatetheme.org/idx/mls-20649500-3_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649500 (from wpestatetheme.org/idx/mls-20649500-3_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152118 (from wpestatetheme.org/idx/mls-20649428-2_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649428 (from wpestatetheme.org/idx/mls-20649428-2_sunny_st_irvine_ca_92603)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152120 (from wpestatetheme.org/idx/mls-20649427-1_sunny_st_irvine_ca_92602)
+09:38:57	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649427 (from wpestatetheme.org/idx/mls-20649427-1_sunny_st_irvine_ca_92602)
+09:38:58	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152128 (from wpestatetheme.org/idx/page-2?idx-d-SortOrders%3C0%3E-Column=DateAdded&idx-d-SortOrders%3C0%3E-Direction=DESC)
+09:38:58	Error: 	"Not Found" (404) at link wpestatetheme.org/idx/.?idx-d-SortOrders%3C0%3E-Column=DateAdded&idx-d-SortOrders%3C0%3E-Direction=DESC (from wpestatetheme.org/idx/page-2?idx-d-SortOrders%3C0%3E-Column=DateAdded&idx-d-SortOrders%3C0%3E-Direction=DESC)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152130 (from wpestatetheme.org/idx/page-4?idx-d-SortOrders%3C0%3E-Column=DateAdded&idx-d-SortOrders%3C0%3E-Direction=DESC)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152136 (from wpestatetheme.org/idx/mls-20649466-96_sunny_st_newport_beach_ca_92661)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649466 (from wpestatetheme.org/idx/mls-20649466-96_sunny_st_newport_beach_ca_92661)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152138 (from wpestatetheme.org/idx/mls-20649482-95_sunny_st_newport_beach_ca_92661)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649482 (from wpestatetheme.org/idx/mls-20649482-95_sunny_st_newport_beach_ca_92661)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152140 (from wpestatetheme.org/idx/mls-20649464-93_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649464 (from wpestatetheme.org/idx/mls-20649464-93_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152143 (from wpestatetheme.org/idx/mls-20649483-91_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649483 (from wpestatetheme.org/idx/mls-20649483-91_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152146 (from wpestatetheme.org/idx/mls-20649465-94_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649465 (from wpestatetheme.org/idx/mls-20649465-94_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152148 (from wpestatetheme.org/idx/mls-20649463-90_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649463 (from wpestatetheme.org/idx/mls-20649463-90_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152150 (from wpestatetheme.org/idx/mls-20649493-89_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649493 (from wpestatetheme.org/idx/mls-20649493-89_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152151 (from wpestatetheme.org/idx/mls-20649492-88_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649492 (from wpestatetheme.org/idx/mls-20649492-88_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152154 (from wpestatetheme.org/idx/mls-20649472-87_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649472 (from wpestatetheme.org/idx/mls-20649472-87_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152156 (from wpestatetheme.org/idx/mls-20649462-86_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649462 (from wpestatetheme.org/idx/mls-20649462-86_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152158 (from wpestatetheme.org/idx/mls-20649491-85_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649491 (from wpestatetheme.org/idx/mls-20649491-85_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152160 (from wpestatetheme.org/idx/mls-20649461-84_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649461 (from wpestatetheme.org/idx/mls-20649461-84_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152162 (from wpestatetheme.org/idx/mls-20649460-83_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649460 (from wpestatetheme.org/idx/mls-20649460-83_sunny_st_newport_beach_ca_92660)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152164 (from wpestatetheme.org/idx/mls-20649490-82_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649490 (from wpestatetheme.org/idx/mls-20649490-82_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152166 (from wpestatetheme.org/idx/mls-20649471-92_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649471 (from wpestatetheme.org/idx/mls-20649471-92_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152168 (from wpestatetheme.org/idx/mls-20649473-81_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649473 (from wpestatetheme.org/idx/mls-20649473-81_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152171 (from wpestatetheme.org/idx/mls-20649487-80_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649487 (from wpestatetheme.org/idx/mls-20649487-80_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152173 (from wpestatetheme.org/idx/mls-20649475-78_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649475 (from wpestatetheme.org/idx/mls-20649475-78_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152175 (from wpestatetheme.org/idx/mls-20649486-79_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649486 (from wpestatetheme.org/idx/mls-20649486-79_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152177 (from wpestatetheme.org/idx/mls-20649474-77_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649474 (from wpestatetheme.org/idx/mls-20649474-77_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152180 (from wpestatetheme.org/idx/mls-20649459-76_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649459 (from wpestatetheme.org/idx/mls-20649459-76_sunny_st_mission_viejo_ca_92692)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152197 (from wpestatetheme.org/idx/city/laguna-beach/?idx-q-ListingStatuses=Active%2cConditional&idx-q-PropertyTypes<0>=1030&idx-q-PropertyTypes<1>=1031&idx-q-PropertyTypes<2>=1032)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152210 (from wpestatetheme.org/idx/mls-20649502-30_sunny_st_laguna_beach_ca_92651)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649502 (from wpestatetheme.org/idx/mls-20649502-30_sunny_st_laguna_beach_ca_92651)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152213 (from wpestatetheme.org/idx/mls-20649429-31_sunny_st_laguna_beach_ca_92651)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649429 (from wpestatetheme.org/idx/mls-20649429-31_sunny_st_laguna_beach_ca_92651)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152216 (from wpestatetheme.org/idx/mls-20649430-32_sunny_st_laguna_beach_ca_92651)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649430 (from wpestatetheme.org/idx/mls-20649430-32_sunny_st_laguna_beach_ca_92651)
+09:40:08	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152219 (from wpestatetheme.org/idx/mls-20649431-34_sunny_st_laguna_beach_ca_92651)
+09:40:09	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649431 (from wpestatetheme.org/idx/mls-20649431-34_sunny_st_laguna_beach_ca_92651)
+09:40:09	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152239 (from wpestatetheme.org/idx/page-2)
+09:40:09	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152242 (from wpestatetheme.org/idx/page-3?idx-d-SortOrders%3C0%3E-Column=DateAdded&idx-d-SortOrders%3C0%3E-Direction=DESC)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152243 (from wpestatetheme.org/idx/mls-20649489-75_sunny_st_mission_viejo_ca_92692)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649489 (from wpestatetheme.org/idx/mls-20649489-75_sunny_st_mission_viejo_ca_92692)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152245 (from wpestatetheme.org/idx/mls-20649488-74_sunny_st_mission_viejo_ca_92692)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649488 (from wpestatetheme.org/idx/mls-20649488-74_sunny_st_mission_viejo_ca_92692)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152248 (from wpestatetheme.org/idx/mls-20649458-73_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649458 (from wpestatetheme.org/idx/mls-20649458-73_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152250 (from wpestatetheme.org/idx/mls-20649457-72_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649457 (from wpestatetheme.org/idx/mls-20649457-72_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152252 (from wpestatetheme.org/idx/mls-20649456-71_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649456 (from wpestatetheme.org/idx/mls-20649456-71_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152255 (from wpestatetheme.org/idx/mls-20649476-69_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649476 (from wpestatetheme.org/idx/mls-20649476-69_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152257 (from wpestatetheme.org/idx/mls-20649479-70_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649479 (from wpestatetheme.org/idx/mls-20649479-70_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152260 (from wpestatetheme.org/idx/mls-20649455-68_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649455 (from wpestatetheme.org/idx/mls-20649455-68_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152262 (from wpestatetheme.org/idx/mls-20649454-67_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649454 (from wpestatetheme.org/idx/mls-20649454-67_sunny_st_mission_viejo_ca_92691)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152265 (from wpestatetheme.org/idx/mls-20649453-66_sunny_st_lake_forest_ca_92679)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649453 (from wpestatetheme.org/idx/mls-20649453-66_sunny_st_lake_forest_ca_92679)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152267 (from wpestatetheme.org/idx/mls-20649452-65_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649452 (from wpestatetheme.org/idx/mls-20649452-65_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152269 (from wpestatetheme.org/idx/mls-20649451-64_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649451 (from wpestatetheme.org/idx/mls-20649451-64_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152271 (from wpestatetheme.org/idx/mls-20649480-62_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649480 (from wpestatetheme.org/idx/mls-20649480-62_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152274 (from wpestatetheme.org/idx/mls-20649450-63_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649450 (from wpestatetheme.org/idx/mls-20649450-63_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152276 (from wpestatetheme.org/idx/mls-20649449-61_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649449 (from wpestatetheme.org/idx/mls-20649449-61_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152278 (from wpestatetheme.org/idx/mls-20649484-59_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649484 (from wpestatetheme.org/idx/mls-20649484-59_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152280 (from wpestatetheme.org/idx/mls-20649448-60_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649448 (from wpestatetheme.org/idx/mls-20649448-60_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152283 (from wpestatetheme.org/idx/mls-20649447-58_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649447 (from wpestatetheme.org/idx/mls-20649447-58_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152285 (from wpestatetheme.org/idx/mls-20649446-57_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649446 (from wpestatetheme.org/idx/mls-20649446-57_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152288 (from wpestatetheme.org/idx/mls-20649485-55_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649485 (from wpestatetheme.org/idx/mls-20649485-55_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152290 (from wpestatetheme.org/idx/mls-20649481-56_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649481 (from wpestatetheme.org/idx/mls-20649481-56_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152293 (from wpestatetheme.org/idx/mls-20649445-54_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649445 (from wpestatetheme.org/idx/mls-20649445-54_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152295 (from wpestatetheme.org/idx/mls-20649444-53_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649444 (from wpestatetheme.org/idx/mls-20649444-53_sunny_st_lake_forest_ca_92630)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152297 (from wpestatetheme.org/idx/mls-20649443-52_sunny_st_lake_forest_ca_92610)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649443 (from wpestatetheme.org/idx/mls-20649443-52_sunny_st_lake_forest_ca_92610)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152300 (from wpestatetheme.org/idx/mls-20649442-51_sunny_st_lake_forest_ca_92610)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649442 (from wpestatetheme.org/idx/mls-20649442-51_sunny_st_lake_forest_ca_92610)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152303 (from wpestatetheme.org/idx/page-4)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152334 (from wpestatetheme.org/idx/page-3)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152336 (from wpestatetheme.org/idx/mls-20649441-50_sunny_st_laguna_woods_ca_92653)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649441 (from wpestatetheme.org/idx/mls-20649441-50_sunny_st_laguna_woods_ca_92653)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152339 (from wpestatetheme.org/idx/mls-20649440-49_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649440 (from wpestatetheme.org/idx/mls-20649440-49_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152342 (from wpestatetheme.org/idx/mls-20649478-48_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649478 (from wpestatetheme.org/idx/mls-20649478-48_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152344 (from wpestatetheme.org/idx/mls-20649495-46_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649495 (from wpestatetheme.org/idx/mls-20649495-46_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152346 (from wpestatetheme.org/idx/mls-20649439-47_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649439 (from wpestatetheme.org/idx/mls-20649439-47_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152348 (from wpestatetheme.org/idx/mls-20649494-45_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649494 (from wpestatetheme.org/idx/mls-20649494-45_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152350 (from wpestatetheme.org/idx/mls-20649438-44_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649438 (from wpestatetheme.org/idx/mls-20649438-44_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152352 (from wpestatetheme.org/idx/mls-20649496-43_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649496 (from wpestatetheme.org/idx/mls-20649496-43_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152355 (from wpestatetheme.org/idx/mls-20649437-42_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649437 (from wpestatetheme.org/idx/mls-20649437-42_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152359 (from wpestatetheme.org/idx/mls-20649436-41_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649436 (from wpestatetheme.org/idx/mls-20649436-41_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152361 (from wpestatetheme.org/idx/mls-20649435-40_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649435 (from wpestatetheme.org/idx/mls-20649435-40_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152363 (from wpestatetheme.org/idx/mls-20649497-39_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649497 (from wpestatetheme.org/idx/mls-20649497-39_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152365 (from wpestatetheme.org/idx/mls-20649434-38_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649434 (from wpestatetheme.org/idx/mls-20649434-38_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152368 (from wpestatetheme.org/idx/mls-20649433-37_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649433 (from wpestatetheme.org/idx/mls-20649433-37_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152371 (from wpestatetheme.org/idx/mls-20649498-36_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649498 (from wpestatetheme.org/idx/mls-20649498-36_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152373 (from wpestatetheme.org/idx/mls-20649432-35_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649432 (from wpestatetheme.org/idx/mls-20649432-35_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/?p=1452152375 (from wpestatetheme.org/idx/mls-20649499-33_sunny_st_laguna_woods_ca_92637)
+09:40:28	Error: 	"Not Found" (404) at link wpestatetheme.org/wp-content/plugins/dsidxpress/client-assist.php?action=PrintListing&MlsNumber=20649499 (from wpestatetheme.org/idx/mls-20649499-33_sunny_st_laguna_woods_ca_92637)
+
+HTTrack Website Copier/3.48-21 mirror complete in 1 hours 10 minutes 51 seconds : 1586 links scanned, 1248 files written (123121221 bytes overall) [104504582 bytes received at 24583 bytes/sec], 44721101 bytes transferred using HTTP compression in 679 files, ratio 18%, 5.0 requests per connection
+(234 errors, 207 warnings, 0 messages)

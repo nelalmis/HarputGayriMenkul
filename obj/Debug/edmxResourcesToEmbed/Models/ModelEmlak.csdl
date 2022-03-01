@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMLAKDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="EMLAKDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Advert" EntityType="EMLAKDBModel.Advert" />
+    <EntitySet Name="AdvertDetail" EntityType="EMLAKDBModel.AdvertDetail" />
+    <EntitySet Name="AdvertOwner" EntityType="EMLAKDBModel.AdvertOwner" />
+    <EntitySet Name="Category" EntityType="EMLAKDBModel.Category" />
+    <EntitySet Name="City" EntityType="EMLAKDBModel.City" />
+    <EntitySet Name="County" EntityType="EMLAKDBModel.County" />
+    <EntitySet Name="ExteriorFeatures" EntityType="EMLAKDBModel.ExteriorFeatures" />
+    <EntitySet Name="InternalFeatures" EntityType="EMLAKDBModel.InternalFeatures" />
+    <EntitySet Name="Picture" EntityType="EMLAKDBModel.Picture" />
+    <EntitySet Name="Quarter" EntityType="EMLAKDBModel.Quarter" />
+    <EntitySet Name="tbl_pk" EntityType="EMLAKDBModel.tbl_pk" />
+    <EntitySet Name="tbl_semt" EntityType="EMLAKDBModel.tbl_semt" />
+    <EntitySet Name="User" EntityType="EMLAKDBModel.User" />
+    <EntitySet Name="Variety" EntityType="EMLAKDBModel.Variety" />
+    <AssociationSet Name="FK_Advert_Category" Association="EMLAKDBModel.FK_Advert_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Advert" EntitySet="Advert" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Advert_User" Association="EMLAKDBModel.FK_Advert_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Advert" EntitySet="Advert" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Advert_Variety" Association="EMLAKDBModel.FK_Advert_Variety">
+      <End Role="Variety" EntitySet="Variety" />
+      <End Role="Advert" EntitySet="Advert" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdvertDetail_Advert1" Association="EMLAKDBModel.FK_AdvertDetail_Advert1">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="AdvertDetail" EntitySet="AdvertDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdvertOwner_Advert" Association="EMLAKDBModel.FK_AdvertOwner_Advert">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="AdvertOwner" EntitySet="AdvertOwner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Picture_Advert" Association="EMLAKDBModel.FK_Picture_Advert">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="Picture" EntitySet="Picture" />
+    </AssociationSet>
+    <AssociationSet Name="FK_County_City" Association="EMLAKDBModel.FK_County_City">
+      <End Role="City" EntitySet="City" />
+      <End Role="County" EntitySet="County" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_semt_County" Association="EMLAKDBModel.FK_tbl_semt_County">
+      <End Role="County" EntitySet="County" />
+      <End Role="tbl_semt" EntitySet="tbl_semt" />
+    </AssociationSet>
+    <AssociationSet Name="AdvertExteriorFeature" Association="EMLAKDBModel.AdvertExteriorFeature">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="ExteriorFeatures" EntitySet="ExteriorFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="AdvertInternalFeature" Association="EMLAKDBModel.AdvertInternalFeature">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="InternalFeatures" EntitySet="InternalFeatures" />
+    </AssociationSet>
+    <FunctionImport Name="ins_Advert">
+      <Parameter Name="Title" Mode="In" Type="String" />
+      <Parameter Name="Price" Mode="In" Type="Decimal" />
+      <Parameter Name="SquareMeters" Mode="In" Type="Int32" />
+      <Parameter Name="CreationDate" Mode="In" Type="DateTime" />
+      <Parameter Name="QuarterID" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryID" Mode="In" Type="Int32" />
+      <Parameter Name="VarietyID" Mode="In" Type="Int32" />
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ins_AdvertDetail">
+      <Parameter Name="AdvertID" Mode="In" Type="Int32" />
+      <Parameter Name="RoomCount" Mode="In" Type="Int32" />
+      <Parameter Name="HallCount" Mode="In" Type="Int32" />
+      <Parameter Name="BathCount" Mode="In" Type="Int16" />
+      <Parameter Name="BuildingAge" Mode="In" Type="Int32" />
+      <Parameter Name="Floors" Mode="In" Type="Int32" />
+      <Parameter Name="OnWhichFloor" Mode="In" Type="Int32" />
+      <Parameter Name="Heating" Mode="In" Type="String" />
+      <Parameter Name="IsFurnished" Mode="In" Type="Int16" />
+      <Parameter Name="IsAvailableCredit" Mode="In" Type="Int16" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="Location" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ins_AdvertExteriorFeature">
+      <Parameter Name="AdvertID" Mode="In" Type="Int32" />
+      <Parameter Name="ExteriorFeatureID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ins_InternalFeature">
+      <Parameter Name="AdvertID" Mode="In" Type="Int32" />
+      <Parameter Name="InternalFeatureID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ins_Picture">
+      <Parameter Name="PictureName" Mode="In" Type="String" />
+      <Parameter Name="PictureWay" Mode="In" Type="String" />
+      <Parameter Name="IsVitrin" Mode="In" Type="Int16" />
+      <Parameter Name="AdvertID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sel_Advert" ReturnType="Collection(EMLAKDBModel.sel_Advert_Result)">
+      <Parameter Name="AdvertID" Mode="In" Type="Int32" />
+      <Parameter Name="Title" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Advert">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+    </Key>
+    <Property Name="AdvertID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SquareMeters" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QuarterID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="VarietyID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Category" Relationship="EMLAKDBModel.FK_Advert_Category" FromRole="Advert" ToRole="Category" />
+    <NavigationProperty Name="User" Relationship="EMLAKDBModel.FK_Advert_User" FromRole="Advert" ToRole="User" />
+    <NavigationProperty Name="Variety" Relationship="EMLAKDBModel.FK_Advert_Variety" FromRole="Advert" ToRole="Variety" />
+    <NavigationProperty Name="AdvertDetail" Relationship="EMLAKDBModel.FK_AdvertDetail_Advert1" FromRole="Advert" ToRole="AdvertDetail" />
+    <NavigationProperty Name="AdvertOwner" Relationship="EMLAKDBModel.FK_AdvertOwner_Advert" FromRole="Advert" ToRole="AdvertOwner" />
+    <NavigationProperty Name="Picture" Relationship="EMLAKDBModel.FK_Picture_Advert" FromRole="Advert" ToRole="Picture" />
+    <NavigationProperty Name="ExteriorFeatures" Relationship="EMLAKDBModel.AdvertExteriorFeature" FromRole="Advert" ToRole="ExteriorFeatures" />
+    <NavigationProperty Name="InternalFeatures" Relationship="EMLAKDBModel.AdvertInternalFeature" FromRole="Advert" ToRole="InternalFeatures" />
+  </EntityType>
+  <EntityType Name="AdvertDetail">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+      <PropertyRef Name="Heating" />
+    </Key>
+    <Property Name="AdvertID" Type="Int32" Nullable="false" />
+    <Property Name="RoomCount" Type="Int32" />
+    <Property Name="HallCount" Type="Int32" />
+    <Property Name="BathCount" Type="Int16" />
+    <Property Name="BuildingAge" Type="Int32" />
+    <Property Name="Floors" Type="Int32" />
+    <Property Name="OnWhichFloor" Type="Int32" />
+    <Property Name="Heating" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsFurnished" Type="Int16" />
+    <Property Name="IsAvailableCredit" Type="Int16" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Location" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.FK_AdvertDetail_Advert1" FromRole="AdvertDetail" ToRole="Advert" />
+  </EntityType>
+  <EntityType Name="AdvertOwner">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+      <PropertyRef Name="Phone1" />
+    </Key>
+    <Property Name="AdvertID" Type="Int32" Nullable="false" />
+    <Property Name="AdvertOwnerName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AdvertOwnerSurname" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Phone1" Type="String" Nullable="false" MaxLength="13" Unicode="false" FixedLength="true" />
+    <Property Name="Phone2" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+    <Property Name="E_mail" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.FK_AdvertOwner_Advert" FromRole="AdvertOwner" ToRole="Advert" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.FK_Advert_Category" FromRole="Category" ToRole="Advert" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="County" Relationship="EMLAKDBModel.FK_County_City" FromRole="City" ToRole="County" />
+  </EntityType>
+  <EntityType Name="County">
+    <Key>
+      <PropertyRef Name="CountyID" />
+    </Key>
+    <Property Name="CountyID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountyName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CityID" Type="Int16" />
+    <NavigationProperty Name="City" Relationship="EMLAKDBModel.FK_County_City" FromRole="County" ToRole="City" />
+    <NavigationProperty Name="tbl_semt" Relationship="EMLAKDBModel.FK_tbl_semt_County" FromRole="County" ToRole="tbl_semt" />
+  </EntityType>
+  <EntityType Name="ExteriorFeatures">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeatureName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.AdvertExteriorFeature" FromRole="ExteriorFeatures" ToRole="Advert" />
+  </EntityType>
+  <EntityType Name="InternalFeatures">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeatureName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.AdvertInternalFeature" FromRole="InternalFeatures" ToRole="Advert" />
+  </EntityType>
+  <EntityType Name="Picture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PictureName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="PictureWay" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="IsVitrin" Type="Int16" />
+    <Property Name="AdvertID" Type="Int32" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.FK_Picture_Advert" FromRole="Picture" ToRole="Advert" />
+  </EntityType>
+  <EntityType Name="Quarter">
+    <Key>
+      <PropertyRef Name="QuarterID" />
+    </Key>
+    <Property Name="QuarterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SemtID" Type="Int16" Nullable="false" />
+    <Property Name="mahalle_ad" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="pk_id" Type="Int16" />
+  </EntityType>
+  <EntityType Name="tbl_pk">
+    <Key>
+      <PropertyRef Name="pk_id" />
+    </Key>
+    <Property Name="pk_id" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kod" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="tbl_semt">
+    <Key>
+      <PropertyRef Name="SemtID" />
+    </Key>
+    <Property Name="SemtID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountyID" Type="Int16" Nullable="false" />
+    <Property Name="SemtAdi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="County" Relationship="EMLAKDBModel.FK_tbl_semt_County" FromRole="tbl_semt" ToRole="County" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Surname" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.FK_Advert_User" FromRole="User" ToRole="Advert" />
+  </EntityType>
+  <EntityType Name="Variety">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VarietyName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Advert" Relationship="EMLAKDBModel.FK_Advert_Variety" FromRole="Variety" ToRole="Advert" />
+  </EntityType>
+  <Association Name="FK_Advert_Category">
+    <End Role="Category" Type="EMLAKDBModel.Category" Multiplicity="1" />
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Advert">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Advert_User">
+    <End Role="User" Type="EMLAKDBModel.User" Multiplicity="1" />
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Advert">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Advert_Variety">
+    <End Role="Variety" Type="EMLAKDBModel.Variety" Multiplicity="1" />
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Variety">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Advert">
+        <PropertyRef Name="VarietyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdvertDetail_Advert1">
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="1" />
+    <End Role="AdvertDetail" Type="EMLAKDBModel.AdvertDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="AdvertDetail">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdvertOwner_Advert">
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="1" />
+    <End Role="AdvertOwner" Type="EMLAKDBModel.AdvertOwner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="AdvertOwner">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Picture_Advert">
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="0..1" />
+    <End Role="Picture" Type="EMLAKDBModel.Picture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="Picture">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_County_City">
+    <End Role="City" Type="EMLAKDBModel.City" Multiplicity="0..1" />
+    <End Role="County" Type="EMLAKDBModel.County" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="County">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_semt_County">
+    <End Role="County" Type="EMLAKDBModel.County" Multiplicity="1" />
+    <End Role="tbl_semt" Type="EMLAKDBModel.tbl_semt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="County">
+        <PropertyRef Name="CountyID" />
+      </Principal>
+      <Dependent Role="tbl_semt">
+        <PropertyRef Name="CountyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AdvertExteriorFeature">
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="*" />
+    <End Role="ExteriorFeatures" Type="EMLAKDBModel.ExteriorFeatures" Multiplicity="*" />
+  </Association>
+  <Association Name="AdvertInternalFeature">
+    <End Role="Advert" Type="EMLAKDBModel.Advert" Multiplicity="*" />
+    <End Role="InternalFeatures" Type="EMLAKDBModel.InternalFeatures" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="sel_Advert_Result">
+    <Property Type="Int32" Name="İlanID" Nullable="false" />
+    <Property Type="DateTime" Name="İlanTarihi" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="Fiyat" Nullable="false" Precision="19" />
+    <Property Type="Int32" Name="MetreKare" Nullable="false" />
+    <Property Type="String" Name="Başlık" Nullable="false" MaxLength="100" />
+    <Property Type="Int16" Name="BanyoSayısı" Nullable="true" />
+    <Property Type="Int32" Name="BinaYaşı" Nullable="true" />
+    <Property Type="String" Name="Açıklama" Nullable="true" />
+    <Property Type="Int32" Name="KatSayısı" Nullable="true" />
+    <Property Type="String" Name="IsınmaŞekli" Nullable="false" MaxLength="50" />
+    <Property Type="Int16" Name="KrediyeUygunMu" Nullable="true" />
+    <Property Type="Int16" Name="DayalıDöseliMi" Nullable="true" />
+    <Property Type="String" Name="Lokasyon" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="KaçıncıKat" Nullable="true" />
+    <Property Type="Int32" Name="OdaSayısı" Nullable="true" />
+    <Property Type="String" Name="KategoriAdı" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Şehir" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="İlçe" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Semt" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Mahalle" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Çeşit" Nullable="true" MaxLength="50" />
+  </ComplexType>
+</Schema>

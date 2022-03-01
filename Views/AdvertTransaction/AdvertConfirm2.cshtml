@@ -1,0 +1,600 @@
+﻿@{
+    ViewBag.Title = "AdvertConfirm2";
+    Layout = "~/Views/Shared/_AdminAnasayfaLayout.cshtml";
+}
+@model HarputGayriMenkul.Models.AdvertClass
+
+<!DOCTYPE html>
+
+<html lang="tr">
+
+
+<head>
+    @section Head{
+        <meta charset="utf-8" />
+        <style>
+           .field-validation-error {
+                color: Red;
+            }
+
+            .validation-summary-errors {
+                font-weight: bold;
+                color: Red;
+            }
+
+            .table-ozellik {
+                width: initial;
+                height: auto;
+            }
+
+            .sec {
+                width: 20px;
+            }
+
+            .isim {
+                width: 170px;
+            }
+               .slideWrapper {
+            position: relative; 
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+        }
+ 
+  .slideWrapper img { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+         }
+ 
+   .slideWrapper img:nth-child(1) { 
+                    display: block;
+          }
+
+
+        </style>
+
+    }
+
+    <title>İlan Ekle
+    </title>
+</head>
+
+<body>
+
+    @using (Html.BeginForm("AdvertConfirm2", "AdvertTransaction", FormMethod.Post,new{@class="form-body"}))
+    {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <legend>İlan</legend>
+            <div class="portlet box green">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-gift"></i>İlan Ekleme Formu
+                    </div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse"></a>
+                        <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                        <a href="javascript:;" class="reload"></a>
+                        <a href="javascript:;" class="remove"></a>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+
+                    <div class="form-body">
+
+                       <div class="form-body">
+
+                        <h3 class="form-section">İlan Sahibi Bilgileri</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.AdvertOwnerName)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @Html.DisplayFor(model => model.AdvertOwnerName)
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.AdvertOwnerSurname)
+                                    </div>
+                                    <div class="col-md-9">
+                                      @Html.DisplayFor(model => model.AdvertOwnerSurname)
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Phone1)
+                                    </div>
+                                    <div class="col-md-9">
+                                      @Html.DisplayFor(model => model.Phone1)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Phone2)
+                                    </div>
+                                    <div class="col-md-9">
+                                       @Html.DisplayFor(model => model.Phone2)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.E_mail)
+                                    </div>
+                                    <div class="col-md-9">
+                                      @Html.DisplayFor(model => model.E_mail)
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="form-section">İlan Bilgileri</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Kategori</label>
+                                    <div class="col-md-9">
+                                         @Html.DisplayFor(model => model.CategoryStr)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">İlan Tipi</label>
+                                    <div class="col-md-9">
+                                        @Html.DisplayFor(model => model.VarietyStr)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Title)
+                                    </div>
+                                    <div class="col-md-9">
+                                       @Html.DisplayFor(model => model.Title)
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Price)
+                                    </div>
+                                    <div class="col-md-9">
+                                       @Html.DisplayFor(model => model.Price)
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.SquareMeters)
+                                    </div>
+                                    <div class="col-md-9">
+                                      @Html.DisplayFor(model => model.SquareMeters)
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.RoomCountID)
+                                    </div>
+                                    <div class="col-md-3">
+                                        @Html.DisplayFor(model => model.RoomCount)
+                                    </div>
+                                   
+                                    <div class="col-md-3">
+                                       
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.BathCount)
+                                    </div>
+                                    <div class="col-md-9">
+                                      @Html.DisplayFor(model => model.BathCount)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.BuildingAge)
+                                    </div>
+                                    <div class="col-md-9">
+                                      @Html.DisplayFor(model => model.BuildingAge)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Floors)
+                                    </div>
+                                    <div class="col-md-9">
+                                      @Html.DisplayFor(model => model.Floors)
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.OnWhichFloor)
+                                    </div>
+                                    <div class="col-md-9">
+                                         @Html.DisplayFor(model => model.OnWhichFloor)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.HeatingID)
+                                    </div>
+                                    <div class="col-md-9">
+                                       @Html.DisplayFor(model => model.HeatingStr)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.IsAvailableCreditID)
+                                    </div>
+                                   <div class="col-md-9">
+                                       @Html.DisplayFor(model => model.IsAvailableCreditStr)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.IsFurnishedID)
+                                    </div>
+                                  <div class="col-md-9">
+                                       @Html.DisplayFor(model => model.IsFurnishedStr)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h3 class="form-section">İlan Adres Bilgileri</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Şehir</label>
+                                    <div class="col-md-9">
+                                        @Html.DisplayFor(model => model.CityStr)      
+                                   </div>
+                             </div>
+
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">İlçe</label>
+                                    <div class="col-md-9">
+                                         @Html.DisplayFor(model => model.CountyStr)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Semt</label>
+                                    <div class="col-md-9">
+                                         @Html.DisplayFor(model => model.SemtStr)
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <!--/span-->
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Mahalle</label>
+                                    <div class="col-md-9">
+                                          @Html.DisplayFor(model => model.QuarterStr)
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Adres</label>
+                                    <div class="col-md-9">
+                                          @Html.DisplayFor(model => model.Location)
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+
+
+                     <h3 class="form-section">İlanın İç Özellikleri</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <div class="col-md-15">
+                                        @{
+                                      int i = 0;
+                                      string deger;
+                                     List<HarputGayriMenkul.Models.ExteriorFeatures> ExteriorList = new List<HarputGayriMenkul.Models.ExteriorFeatures>();
+                                         
+                                        }
+                                      
+                                        
+                                        @while (i < ViewBag.InternalFeatureList.Count)
+                                        {
+                                            deger = ViewBag.InternalFeatureList[i++];
+                                            <table class="table-ozellik">
+                                                <tr>
+                                                    <td class="sec">
+                                                        <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />
+                                                    
+                                                    </td>
+                                                     <td class="isim">
+
+                                                         @deger
+                                                     </td>   
+                                                    @if (i < ViewBag.InternalFeatureList.Count)
+                                                    {
+                                                    
+                                                        deger = ViewBag.InternalFeatureList[i++];
+                                                    <td class="sec">
+                                                      <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes"/>
+                                                    </td>
+                                                     <td class="isim">
+
+                                                         @deger
+                                                     </td>   
+                                                    }
+                                                   @if (i < ViewBag.InternalFeatureList.Count)
+                                                   {
+                                                   
+                                                       deger = ViewBag.InternalFeatureList[i++];
+                                                    <td class="sec">
+                                                       <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes"/>
+                                                        
+
+                                                    </td>
+                                                        <td class="isim">
+
+                                                         @deger
+                                                     </td>   
+                                                   }
+                                                    @if (i < ViewBag.InternalFeatureList.Count)
+                                                    {
+                                                        deger = ViewBag.InternalFeatureList[i++];
+                                                    <td class="sec">
+                                                        <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes"/>
+
+                                                    </td>
+                                                     <td class="isim">
+
+                                                         @deger
+                                                     </td>   
+                                                    }
+                                                   
+
+                                                </tr>
+                                            </table>
+                                                    
+                                                
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <!--/span-->
+                        </div>
+                        <br />
+                        <h3 class="form-section">İlanın Dış Özellikleri</h3>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <div class="col-md-15">
+                                        @{
+                                        i = 0;
+                                        
+                                        }
+                                       @while (i <  ViewBag.ExteriorFeatureList.Count)
+                                        {
+                                            deger = ViewBag.ExteriorFeatureList[i++];
+                                            <table class="table-ozellik">
+                                                <tr>
+                                                    <td class="sec">
+                                                      <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />
+                                                    </td>
+           
+                                                    <td class="isim">
+                                                        @deger
+                                                    </td>
+                                                    @if (i <  ViewBag.ExteriorFeatureList.Count)
+                                                    {
+                                                        
+                                                        deger =  ViewBag.ExteriorFeatureList[i++];
+                                                    <td class="sec">
+                                                      <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />
+                                                    </td>
+                                                     <td class="isim">
+
+                                                         @deger
+                                                     </td>   
+                                                    }
+                                                   @if (i <  ViewBag.ExteriorFeatureList.Count)
+                                                   {
+                                                       
+                                                       deger =  ViewBag.ExteriorFeatureList[i++];
+                                                    <td class="sec">
+                                                       <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />
+                                                        
+
+                                                    </td>
+                                                     <td class="isim">
+                                                         @deger
+
+                                                       </td>
+                                                   }
+                                                    @if (i <  ViewBag.ExteriorFeatureList.Count)
+                                                    {
+                                                        
+                                                        deger =  ViewBag.ExteriorFeatureList[i++];
+                                                    <td class="sec"> 
+                                                       <img src="~/Content/EmlakPages/wpestatetheme.org/wp-content/themes/wpestate/images/yes_prop.png" alt="yes" />
+
+                                                    </td>
+                                                      <td class="isim">
+                                                         @deger
+
+                                                     </td>
+                                                    }
+                                                   
+
+                                                </tr>
+                                            </table>
+                                                    
+                                                
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <!--/span-->
+                        </div>
+                        <br />
+
+
+                        <div class="form-actions">
+                            @* <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">*@
+                            <div class="col-md-offset-3 col-md-9">
+                                @* @using (Html.BeginForm())
+                                                {
+                                                    
+                                                    *@
+                                <button type="submit" class="btn green" id="" name="btnPrev" value="Prev">Geri</button>
+                                <button type="submit" class="btn green" id="" name="btnKaydet" value="Kaydet">Kaydet</button>
+                                <button type="submit" class="btn red" id="" name="btnCancel" value="İptal">İptal</button>
+                                @*
+                                @*<button type="submit" class="btn green" id="back-step" name="back-step" value="Prev">Prev</button>
+                                <button type="submit" class="btn green" id="next-step" name="next-step" value="Next">Next</button>*@
+                                @*
+                                                    <button type="button" class="btn default">Cancel</button>*@
+                                <div style="color: Red; font-size: 14px">@ViewBag.Message</div>
+
+                                @*}*@
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </fieldset>
+    }
+
+     <script>
+         var allImages;
+         var imgCount;
+         var current = 0;
+ 
+         $(document).ready(function ($) {
+             allImages = $(".slideWrapper img");   1)
+             imgCount = allImages.length; 2)
+ 
+             setInterval(slide, 2500);  5)
+         });
+ 
+         function slide() {
+ 
+             if (current == (imgCount - 1)) { 3)
+ 
+                 allImages.fadeOut(600).eq(0).fadeIn(600);
+                 current = 0;
+             }
+             else { 4)
+                 current++;
+                 allImages.fadeOut(600).eq(current).fadeIn(600);
+             }
+         }
+ 
+ 
+    </script>
+    </body>
+    </html>

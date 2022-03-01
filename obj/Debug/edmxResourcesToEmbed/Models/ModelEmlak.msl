@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EMLAKDBModelStoreContainer" CdmEntityContainer="EMLAKDBEntities">
+    <EntitySetMapping Name="Advert">
+      <EntityTypeMapping TypeName="EMLAKDBModel.Advert">
+        <MappingFragment StoreEntitySet="Advert">
+          <ScalarProperty Name="AdvertID" ColumnName="AdvertID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="SquareMeters" ColumnName="SquareMeters" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="QuarterID" ColumnName="QuarterID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="VarietyID" ColumnName="VarietyID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdvertDetail">
+      <EntityTypeMapping TypeName="EMLAKDBModel.AdvertDetail">
+        <MappingFragment StoreEntitySet="AdvertDetail">
+          <ScalarProperty Name="AdvertID" ColumnName="AdvertID" />
+          <ScalarProperty Name="RoomCount" ColumnName="RoomCount" />
+          <ScalarProperty Name="HallCount" ColumnName="HallCount" />
+          <ScalarProperty Name="BathCount" ColumnName="BathCount" />
+          <ScalarProperty Name="BuildingAge" ColumnName="BuildingAge" />
+          <ScalarProperty Name="Floors" ColumnName="Floors" />
+          <ScalarProperty Name="OnWhichFloor" ColumnName="OnWhichFloor" />
+          <ScalarProperty Name="Heating" ColumnName="Heating" />
+          <ScalarProperty Name="IsFurnished" ColumnName="IsFurnished" />
+          <ScalarProperty Name="IsAvailableCredit" ColumnName="IsAvailableCredit" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdvertOwner">
+      <EntityTypeMapping TypeName="EMLAKDBModel.AdvertOwner">
+        <MappingFragment StoreEntitySet="AdvertOwner">
+          <ScalarProperty Name="AdvertID" ColumnName="AdvertID" />
+          <ScalarProperty Name="AdvertOwnerName" ColumnName="AdvertOwnerName" />
+          <ScalarProperty Name="AdvertOwnerSurname" ColumnName="AdvertOwnerSurname" />
+          <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+          <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+          <ScalarProperty Name="E_mail" ColumnName="E-mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="EMLAKDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="City">
+      <EntityTypeMapping TypeName="EMLAKDBModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="County">
+      <EntityTypeMapping TypeName="EMLAKDBModel.County">
+        <MappingFragment StoreEntitySet="County">
+          <ScalarProperty Name="CountyID" ColumnName="CountyID" />
+          <ScalarProperty Name="CountyName" ColumnName="CountyName" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExteriorFeatures">
+      <EntityTypeMapping TypeName="EMLAKDBModel.ExteriorFeatures">
+        <MappingFragment StoreEntitySet="ExteriorFeatures">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FeatureName" ColumnName="FeatureName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InternalFeatures">
+      <EntityTypeMapping TypeName="EMLAKDBModel.InternalFeatures">
+        <MappingFragment StoreEntitySet="InternalFeatures">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FeatureName" ColumnName="FeatureName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Picture">
+      <EntityTypeMapping TypeName="EMLAKDBModel.Picture">
+        <MappingFragment StoreEntitySet="Picture">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PictureName" ColumnName="PictureName" />
+          <ScalarProperty Name="PictureWay" ColumnName="PictureWay" />
+          <ScalarProperty Name="IsVitrin" ColumnName="IsVitrin" />
+          <ScalarProperty Name="AdvertID" ColumnName="AdvertID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quarter">
+      <EntityTypeMapping TypeName="EMLAKDBModel.Quarter">
+        <MappingFragment StoreEntitySet="Quarter">
+          <ScalarProperty Name="QuarterID" ColumnName="QuarterID" />
+          <ScalarProperty Name="SemtID" ColumnName="SemtID" />
+          <ScalarProperty Name="mahalle_ad" ColumnName="mahalle_ad" />
+          <ScalarProperty Name="pk_id" ColumnName="pk_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_pk">
+      <EntityTypeMapping TypeName="EMLAKDBModel.tbl_pk">
+        <MappingFragment StoreEntitySet="tbl_pk">
+          <ScalarProperty Name="pk_id" ColumnName="pk_id" />
+          <ScalarProperty Name="kod" ColumnName="kod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_semt">
+      <EntityTypeMapping TypeName="EMLAKDBModel.tbl_semt">
+        <MappingFragment StoreEntitySet="tbl_semt">
+          <ScalarProperty Name="SemtID" ColumnName="SemtID" />
+          <ScalarProperty Name="CountyID" ColumnName="CountyID" />
+          <ScalarProperty Name="SemtAdi" ColumnName="SemtAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="EMLAKDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Variety">
+      <EntityTypeMapping TypeName="EMLAKDBModel.Variety">
+        <MappingFragment StoreEntitySet="Variety">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VarietyName" ColumnName="VarietyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AdvertExteriorFeature" TypeName="EMLAKDBModel.AdvertExteriorFeature" StoreEntitySet="AdvertExteriorFeature">
+      <EndProperty Name="Advert">
+        <ScalarProperty Name="AdvertID" ColumnName="AdvertID" />
+      </EndProperty>
+      <EndProperty Name="ExteriorFeatures">
+        <ScalarProperty Name="ID" ColumnName="ExteriorFeatureID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="AdvertInternalFeature" TypeName="EMLAKDBModel.AdvertInternalFeature" StoreEntitySet="AdvertInternalFeature">
+      <EndProperty Name="Advert">
+        <ScalarProperty Name="AdvertID" ColumnName="AdvertID" />
+      </EndProperty>
+      <EndProperty Name="InternalFeatures">
+        <ScalarProperty Name="ID" ColumnName="InternalFeatureID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="ins_Advert" FunctionName="EMLAKDBModel.Store.ins_Advert" />
+    <FunctionImportMapping FunctionImportName="ins_AdvertDetail" FunctionName="EMLAKDBModel.Store.ins_AdvertDetail" />
+    <FunctionImportMapping FunctionImportName="ins_AdvertExteriorFeature" FunctionName="EMLAKDBModel.Store.ins_AdvertExteriorFeature" />
+    <FunctionImportMapping FunctionImportName="ins_InternalFeature" FunctionName="EMLAKDBModel.Store.ins_InternalFeature" />
+    <FunctionImportMapping FunctionImportName="ins_Picture" FunctionName="EMLAKDBModel.Store.ins_Picture" />
+    <FunctionImportMapping FunctionImportName="sel_Advert" FunctionName="EMLAKDBModel.Store.sel_Advert">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EMLAKDBModel.sel_Advert_Result">
+          <ScalarProperty Name="İlanID" ColumnName="İlanID" />
+          <ScalarProperty Name="İlanTarihi" ColumnName="İlanTarihi" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="MetreKare" ColumnName="MetreKare" />
+          <ScalarProperty Name="Başlık" ColumnName="Başlık" />
+          <ScalarProperty Name="BanyoSayısı" ColumnName="BanyoSayısı" />
+          <ScalarProperty Name="BinaYaşı" ColumnName="BinaYaşı" />
+          <ScalarProperty Name="Açıklama" ColumnName="Açıklama" />
+          <ScalarProperty Name="KatSayısı" ColumnName="KatSayısı" />
+          <ScalarProperty Name="IsınmaŞekli" ColumnName="IsınmaŞekli" />
+          <ScalarProperty Name="KrediyeUygunMu" ColumnName="KrediyeUygunMu" />
+          <ScalarProperty Name="DayalıDöseliMi" ColumnName="DayalıDöseliMi" />
+          <ScalarProperty Name="Lokasyon" ColumnName="Lokasyon" />
+          <ScalarProperty Name="KaçıncıKat" ColumnName="KaçıncıKat" />
+          <ScalarProperty Name="OdaSayısı" ColumnName="OdaSayısı" />
+          <ScalarProperty Name="KategoriAdı" ColumnName="KategoriAdı" />
+          <ScalarProperty Name="Şehir" ColumnName="Şehir" />
+          <ScalarProperty Name="İlçe" ColumnName="İlçe" />
+          <ScalarProperty Name="Semt" ColumnName="Semt" />
+          <ScalarProperty Name="Mahalle" ColumnName="Mahalle" />
+          <ScalarProperty Name="Çeşit" ColumnName="Çeşit" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

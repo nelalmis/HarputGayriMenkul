@@ -1,0 +1,819 @@
+﻿@using HarputGayriMenkul.Models;
+
+@model HarputGayriMenkul.Models.AdvertClass
+
+@{
+    ViewBag.Title = "AdminAnasayfa";
+    Layout = "~/Views/Shared/_AdminAnasayfaLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="tr">
+
+
+<head>
+    @section Head{
+        <meta charset="utf-8" />
+        <style>
+            .field-validation-error {
+                color: Red;
+            }
+
+            .validation-summary-errors {
+                font-weight: bold;
+                color: Red;
+            }
+
+            .table-ozellik {
+                width: initial;
+                height: auto;
+            }
+
+            .sec {
+                width: 20px;
+            }
+
+            .isim {
+                width: 170px;
+            }
+        </style>
+
+    }
+
+    <title>İlan Ekle
+    </title>
+</head>
+
+<body>
+
+    @using (Html.BeginForm("AdvertIns", "AdvertTransaction", FormMethod.Post,new{@class="form-body"}))
+    {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <legend>İlan</legend>
+            <div class="portlet box green">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-gift"></i>İlan Ekleme Formu
+                    </div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse"></a>
+                        <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                        <a href="javascript:;" class="reload"></a>
+                        <a href="javascript:;" class="remove"></a>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+
+                    <div class="form-body">
+
+                        <h3 class="form-section">İlan Sahibi Bilgileri</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.AdvertOwnerName)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @Html.TextBoxFor(model => model.AdvertOwnerName, new { @class = "form-control", @placeholder = "Adı"})
+                                        @*<input type="text" class="form-control" placeholder="adı"  name='@Html.NameFor(model => model.AdvertOwnerName)'>*@
+                                        @Html.ValidationMessageFor(model => model.AdvertOwnerName)
+                                        <br />
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.AdvertOwnerSurname)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @Html.TextBoxFor(model => model.AdvertOwnerSurname, new { @class = "form-control", @placeholder = "Soyadı" })
+                                        @Html.ValidationMessageFor(model => model.AdvertOwnerSurname)
+                                        <br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Phone1)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @Html.TextBoxFor(model => model.Phone1, new { @class = "form-control", @id = "Telefon" })
+                                       
+                                        @*<input type="tel"  id="Telefon" class="form-control" name='@Html.NameFor(model => model.Phone1)'>*@
+                                        @Html.ValidationMessageFor(model => model.Phone1)
+                                        <br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Phone2)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="tel" class="form-control" id="mask_phone" name='@Html.NameFor(model => model.Phone2)'>*@
+                                        @Html.TextBoxFor(model => model.Phone2, new { @class = "form-control", @placeholder = "telefon-2" })
+                                        @Html.ValidationMessageFor(model => model.Phone2)
+                                        <br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.E_mail)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="email" class="form-control" placeholder="email" name='@Html.NameFor(model => model.E_mail)'>*@
+                                        @Html.TextBoxFor(model => model.E_mail, new { @class = "form-control", @placeholder = "E-mail" })
+                                        @Html.ValidationMessageFor(model => model.E_mail)
+                                        <br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="form-section">İlan Bilgileri</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Kategori</label>
+                                    <div class="col-md-9">
+                                        @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.CategoryList, "ID", "CategoryName"), "Seçiniz", new { @class = "select2_category form-control" })
+                                        @* <select class="select2_category form-control"  data-placeholder="Kategori Seç" tabindex="1" itemid="1" name='@Html.NameFor(model=>model.CategoryID)' required="required">
+                                                <option value="-1">Seçiniz</option>
+                                                @foreach (HarputGayriMenkul.Models.Category c in ViewBag.CategoryList)
+                                                {
+                                                    <option value="@c.ID">@c.CategoryName </option>
+
+                                                }
+                                            </select>*@
+                                        @Html.ValidationMessageFor(model => model.CategoryID)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">İlan Tipi</label>
+                                    <div class="col-md-9">
+                                        @*<select class="select2_category form-control"  data-placeholder="İlan Tipi Seç" tabindex="1" name='@Html.NameFor(model=>model.VarietyID)'>
+                                                <option value="-1">Seçiniz</option>
+                                                @foreach (HarputGayriMenkul.Models.Variety c in ViewBag.VarietyList)
+                                                {
+                                                    <option value="@c.ID">@c.VarietyName </option>
+
+                                                }
+                                            </select>*@
+                                        @Html.DropDownListFor(model => model.VarietyID, new SelectList(ViewBag.VarietyList, "ID", "VarietyName"), "Seçiniz", new { @class = "select2_category form-control" })
+                                        @Html.ValidationMessageFor(model => model.VarietyID)
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Title)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="text" class="form-control" placeholder="İLAN BAŞLIĞI" name='@Html.NameFor(model => model.Title)'>*@
+                                        @Html.TextBoxFor(model => model.Title, new { @class = "form-control", @placeholder = "Başlık" })
+                                        @Html.ValidationMessageFor(model => model.Title)
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Price)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="text"  class="form-control" placeholder="Fiyat" name='@Html.NameFor(model => model.Price)'>*@
+                                        @Html.TextBoxFor(model => model.Price, new { @class = "form-control", @placeholder = "Fiyat" })
+                                        @Html.ValidationMessageFor(model => model.Price)<br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.SquareMeters)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="text" class="form-control" placeholder="metre kare" name='@Html.NameFor(model => model.SquareMeters)'>*@
+                                        @Html.TextBoxFor(model => model.SquareMeters, new { @class = "form-control", @placeholder = "Metre kare" })
+                                        @Html.ValidationMessageFor(model => model.SquareMeters)<br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.RoomCountID)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="number" class="form-control" name='@Html.NameFor(model => model.RoomCount)' value="0" min="0">*@
+                                        @Html.DropDownListFor(model => model.RoomCountID, new SelectList(ViewBag.RoomCountList, "RoomCountID", "RoomCountName"), "Seçiniz", new { @class = "select2_category form-control" })
+                                        @Html.ValidationMessageFor(model => model.RoomCountID)
+                                        <span class="help-block"></span>
+                                    </div>
+                                   
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.BathCount)
+                                    </div>
+
+                                    <div class="col-md-9">
+                                        @*<select class="select2_category form-control" data-placeholder="Seçiniz" tabindex="1" name='@Html.NameFor(model=>model.BathCount)'>
+                                                <option value="-1">Seçiniz</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6+</option>
+
+                                            </select>*@
+                                        @Html.DropDownListFor(model => model.BathCount, new SelectList(Model.BathList, @Model.BathCount), "Seçiniz", new { @class = "select2_category form-control" })
+                                        @Html.ValidationMessageFor(model => model.BathCount)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.BuildingAge)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="number" class="form-control" name='@Html.NameFor(model => model.BuildingAge)' min="0" aria-valuetext="0" aria-valuemin="0" autocomplete="on">*@
+                                        @Html.TextBoxFor(model => model.BuildingAge, new { @class = "form-control", @type = "number", @value = "0", @min = "0" })
+                                        @Html.ValidationMessageFor(model => model.BuildingAge)<br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.Floors)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="number" class="form-control"  name='@Html.NameFor(model => model.Floors)' min="0" />*@
+                                        @Html.TextBoxFor(model => model.Floors, new { @class = "form-control", @type = "number", @value = "0", @min = "0" })
+                                        @Html.ValidationMessageFor(model => model.Floors)<br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.OnWhichFloor)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<input type="number" class="form-control" name='@Html.NameFor(model => model.OnWhichFloor)' min="0">*@
+                                        @Html.TextBoxFor(model => model.OnWhichFloor, new { @class = "form-control", @type = "number", @value = "0", @min = "0" })
+                                        @Html.ValidationMessageFor(model => model.OnWhichFloor)<br />
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.HeatingID)
+                                    </div>
+                                    <div class="col-md-9">
+                                        @*<select class="select2_category form-control" data-placeholder="Isıtma Türü" tabindex="1" name='@Html.NameFor(model => model.Heating)'>
+                                            <option value="-1">Seçiniz</option>
+                                            <option value="Klimali">Klimali</option>
+                                            <option value="Sobalı">Sobalı</option>
+
+                                        </select>*@
+                                          @Html.DropDownListFor(model => model.HeatingID, new SelectList(ViewBag.HeatingList, "HeatingID", "HetingName"), "Seçiniz", new { @class = "select2_category form-control" })
+                                        @Html.ValidationMessageFor(model => model.HeatingID)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.IsAvailableCreditID)
+                                    </div>
+                                     <div class="col-md-9">
+                                     @Html.DropDownListFor(model => model.IsAvailableCreditID, new SelectList(ViewBag.SuitableList, "SuitableID", "SuitableName"), "Seçiniz", new { @class = "select2_category form-control" })
+                                         </div>
+                                    @*<div class="radio-list">
+                                        <label class="radio-inline">
+                                            <input type="radio" name='@Html.NameFor(model => model.IsAvailableCreditID)' value="1" />
+                                           Bilgi Yok           
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name='@Html.NameFor(model => model.IsAvailableCreditID)' value="2" />
+                                            Uygun
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name='@Html.NameFor(model => model.IsAvailableCreditID)' value="3" />
+                                            Uygun Değil
+                                        </label>
+                                    </div>*@
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="control-label col-md-3">
+                                        @Html.LabelFor(model => model.IsFurnishedID)
+                                    </div>
+                                     <div class="col-md-9">
+                                     @Html.DropDownListFor(model => model.IsFurnishedID, new SelectList(ViewBag.SuitableList, "SuitableID", "SuitableName"), "Seçiniz", new { @class = "select2_category form-control" })
+                                         </div>
+                                   @* <div class="radio-list">
+                                         <label class="radio-inline">
+                                            <input type="radio" name='@Html.NameFor(model => model.IsFurnishedID)' value="1" />
+                                           Bilgi Yok           
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name='@Html.NameFor(model => model.IsFurnishedID)' value="2" />
+                                            Uygun
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name='@Html.NameFor(model => model.IsFurnishedID)' value="3" />
+                                            Uygun Değil
+                                        </label>
+                                    </div>*@
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h3 class="form-section">İlan Adres Bilgileri</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Şehir</label>
+                                    <div class="col-md-9">
+                                        @* <select class="select2_category form-control" data-placeholder="İl Seçiniz" tabindex="1" id="City" name='@Html.NameFor(model => model.CityID)'>
+                                                <option value="-1" selected="selected">İl Seçiniz</option>
+                                                @foreach (HarputGayriMenkul.Models.City c in ViewBag.CityList)
+                                                {
+                                                    <option value="@c.CityID">@c.CityName </option>
+                                       
+                                                }
+
+                                            </select>*@
+
+                                        @Html.DropDownListFor(model => model.CityID, new SelectList(ViewBag.CityList, "CityID", "CityName"), "Seçiniz", new { @class = "select2_category form-control", @id = "City" })
+
+                                        @Html.ValidationMessageFor(model => model.CityID)
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">İlçe</label>
+                                    <div class="col-md-9">
+                                        @*<select class="select2_category form-control" data-placeholder="İlçe Seçiniz" tabindex="1" id="County" name='@Html.NameFor(model => model.CountyID)'>
+                                            </select>*@
+                                        @Html.DropDownListFor(model => model.CountyID,new SelectList(ViewBag.CountyList,"CountyID","CountyName"),"Seçiniz",new{ @class = "select2_category form-control", @id = "County" })
+
+                                        @Html.ValidationMessageFor(model => model.CountyID)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Semt</label>
+                                    <div class="col-md-9">
+                                        @* <select class="select2_category form-control" data-placeholder="Seçiniz" tabindex="1" id="Semt" name='@Html.NameFor(model => model.SemtID)'>
+                                            </select>*@
+                                        @Html.DropDownListFor(model => model.SemtID, new SelectList(Model.SemtList, "SemtID", "SemtAdi"), "Seçiniz", new { @class = "select2_category form-control", @id = "Semt" })
+                                        @Html.ValidationMessageFor(model => model.SemtID)
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <!--/span-->
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Mahalle</label>
+                                    <div class="col-md-9">
+                                        @*<select class="select2_category form-control" data-placeholder="Seçiniz" tabindex="-1" id="Quarter" name='@Html.NameFor(model => model.QuarterID)'>
+                                                <option value="-1" selected="selected">Mahalle Seçiniz</option>
+
+                                            </select>*@
+                                        @Html.DropDownListFor(model => model.QuarterID, new SelectList(Model.QuarterList.Where(u => u.SemtID == Model.SemtID).ToList(), "QuarterID", "mahalle_ad"), "Seçiniz", new { @class = "select2_category form-control", @id = "Quarter" })
+                                        @Html.ValidationMessageFor(model => model.QuarterID)
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Adres</label>
+                                    <div class="col-md-9">
+                                        <textarea id="TextArea1" name='@Html.NameFor(model => model.Location)' cols="20" rows="2" class="form-control" style="width: 330px; height: auto; max-width: 400px; max-height: 300px; min-height: 200px;"></textarea>
+                                        @Html.ValidationMessageFor(model => model.Location)
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+
+
+@*                        <h3 class="form-section">İlanın İç Özellikleri</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <div class="col-md-15">
+                                        @{
+        int i = 0;
+                                        }
+                                        @while (i < ViewBag.InternalFeatureList.Count)
+                                        {
+                                            <table class="table-ozellik">
+                                                <tr>
+                                                    <td class="sec">
+                                                        <input name="chcInternalFeature" type="checkbox" Value="@ViewBag.InternalFeatureList[i].ID"/>
+                                                    </td>
+                                                    <td class="isim">
+                                                        @ViewBag.InternalFeatureList[i++].FeatureName
+                                                    </td>
+
+                                                    @if (i < ViewBag.InternalFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcInternalFeature" type="checkbox" Value="@ViewBag.InternalFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.InternalFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+                                                    @if (i < ViewBag.InternalFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcInternalFeature" type="checkbox" Value="@ViewBag.InternalFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.InternalFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+                                                    @if (i < ViewBag.InternalFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcInternalFeature" type="checkbox" Value="@ViewBag.InternalFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.InternalFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+                                                    @if (i < ViewBag.InternalFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcInternalFeature" type="checkbox" Value="@ViewBag.InternalFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.InternalFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+
+                                                </tr>
+                                            </table>
+                                                    
+                                                
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <!--/span-->
+                        </div>
+                        <br />
+                        <h3 class="form-section">İlanın Dış Özellikleri</h3>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <div class="col-md-15">
+                                        @{
+                                        i = 0;
+                                        }
+                                        @while (i < ViewBag.ExteriorFeatureList.Count)
+                                        {
+                                            <table class="table-ozellik">
+                                                <tr>
+                                                    <td class="sec">
+                                                        <input name="chcExteriorFeature" type="checkbox" Value="@ViewBag.ExteriorFeatureList[i].ID"/>
+                                                    </td>
+                                                    <td class="isim">
+                                                        @ViewBag.ExteriorFeatureList[i++].FeatureName
+                                                    </td>
+
+                                                    @if (i < ViewBag.ExteriorFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcExteriorFeature" type="checkbox" Value="@ViewBag.ExteriorFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.ExteriorFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+                                                    @if (i < ViewBag.ExteriorFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcExteriorFeature" type="checkbox" Value="@ViewBag.ExteriorFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.ExteriorFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+                                                    @if (i < ViewBag.ExteriorFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcExteriorFeature" type="checkbox" Value="@ViewBag.ExteriorFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.ExteriorFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+                                                    @if (i < ViewBag.ExteriorFeatureList.Count)
+                                                    {
+                                                        <td class="sec">
+                                                            <input name="chcExteriorFeature" type="checkbox" Value="@ViewBag.ExteriorFeatureList[i].ID"/>
+                                                        </td>
+                                                        <td class="isim">
+                                                            @ViewBag.ExteriorFeatureList[i++].FeatureName
+                                                        </td>
+                                                    }
+
+
+                                                </tr>
+
+                                            </table>
+                                                    
+                                                
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+
+                            <!--/span-->
+                        </div>
+                        <br />*@
+
+
+                        <div class="form-actions">
+                            @* <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">*@
+                            <div class="col-md-offset-3 col-md-9">
+                                @* @using (Html.BeginForm())
+                                                {
+                                                    
+                                                    *@
+                                @*<button type="submit" class="btn green" id="" name="back" value="Prev">Prev</button>*@
+                                <button type="submit" class="btn green" id="" name="btnNext" value="Next">Next</button>
+                                @*
+                                @*<button type="submit" class="btn green" id="back-step" name="back-step" value="Prev">Prev</button>
+                                <button type="submit" class="btn green" id="next-step" name="next-step" value="Next">Next</button>*@
+                                @*
+                                                    <button type="button" class="btn default">Cancel</button>*@
+                                <div style="color: Red; font-size: 14px">@ViewBag.Message</div>
+
+                                @*}*@
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    @*
+                    }*@
+
+
+
+
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </fieldset>
+    }
+
+    <script src="~/Content/assets/global/plugins/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.CityID = $("#City").val();
+            GetirIlceler($.CityID);
+            $("#City").change(function () {
+                $.CityID = $(this).val();
+                GetirIlceler($.CityID);
+
+
+            });
+        });
+        function GetirIlceler(CityID) {
+            $("#County").empty();
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetirIlceler", "AdvertTransaction")',
+                data: { CityID: $.CityID },
+                dataType: "json",
+                success: function (CountyList) {
+                    $("#County").append("<option value=" + -1 + ">" + 'İlçe Seçiniz' + "</option>");
+                    $.each(CountyList, function (index, ilce) {
+                        $("#County").append("<option value=" + ilce.CountyID + ">" + ilce.CountyName + "</option>");
+                    });
+                }
+
+
+            });
+
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.CountyID = $("#County").val();
+            GetirSemtler($.CountyID);
+            $("#County").change(function () {
+                $.CountyID = $(this).val();
+                GetirSemtler($.CountyID);
+
+
+            });
+        });
+        function GetirSemtler(CountyID) {
+            $("#Semt").empty();
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetirSemtler", "AdvertTransaction")',
+                data: { CountyID: $.CountyID },
+                dataType: "json",
+                success: function (SemtList) {
+                    $("#Semt").append("<option value=" + -1 + ">" + 'Semt Seçiniz' + "</option>");
+                    $.each(SemtList, function (index, semt) {
+                        $("#Semt").append("<option value=" + semt.CountyID + ">" + semt.CountyName + "</option>");
+                    });
+                }
+
+
+            });
+
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.SemtID = $("#Semt").val();
+            GetirMahalleler($.SemtID);
+            $("#Semt").change(function () {
+                $.SemtID = $(this).val();
+                GetirMahalleler($.SemtID);
+
+
+            });
+        });
+        function GetirMahalleler(SemtID) {
+            $("#Quarter").empty();
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetirMahalleler", "AdvertTransaction")',
+                data: { SemtID: $.SemtID },
+                dataType: "json",
+                success: function (MahalleList) {
+                    $("#Quarter").append("<option value=" + -1 + ">" + 'Mahale Seçiniz' + "</option>");
+                    $.each(MahalleList, function (index, Mah) {
+                        $("#Quarter").append("<option value=" + Mah.CountyID + ">" + Mah.CountyName + "</option>");
+                    });
+                }
+
+
+            });
+
+        }
+    </script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var Secililer = [];
+
+            $("#btnKaydet").click(function () {
+                $.seciliSatirlarIc = $("input[type='checkbox'][name='chcInternalFeature']:checked");
+                $.seciliSatirlarDis = $("input[type='checkbox'][name='chcExteriorFeature']:checked");
+                if ($.seciliSatirlarIc.length / 0) {
+                    for (var i = 0; i < $.seciliSatirlarIc.length; i++) {
+                        Secililer.push($.seciliSatirlarIc[i].value);
+                        //$.seciliIdlerIc += $.seciliSatirlarIc[i].value;
+                        //if (i != $.seciliSatirlarIc.length - 1)
+                        //    $.seciliIdlerIc += ",";
+                    }
+
+                }
+                Secililer.push('#');
+                if ($.seciliSatirlarDis.length / 0) {
+                    for (var i = 0; i < $.seciliSatirlarDis.length; i++) {
+                        Secililer.push($.seciliSatirlarDis[i].value);
+                    }
+                }
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SeciliOzelliklerAdd", "AdvertTransaction")',
+                    data: { SeciliOzellikler: Secililer },
+                    dataType: "json",
+                    traditional: true,
+                    succcess: function (data) {
+                        alert("İşlem başarılı");
+
+                    }
+
+
+                });
+
+
+
+
+            });
+
+
+        });
+
+    </script>
+
+    <!-- The template to display files available for download -->
+
+</body>
+</html>

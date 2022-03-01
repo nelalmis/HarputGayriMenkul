@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMLAKDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EMLAKDBModelStoreContainer">
+    <EntitySet Name="Advert" EntityType="EMLAKDBModel.Store.Advert" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdvertDetail" EntityType="EMLAKDBModel.Store.AdvertDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdvertEnvironmentFeature" EntityType="EMLAKDBModel.Store.AdvertEnvironmentFeature" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdvertExteriorFeature" EntityType="EMLAKDBModel.Store.AdvertExteriorFeature" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdvertInternalFeature" EntityType="EMLAKDBModel.Store.AdvertInternalFeature" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdvertOwner" EntityType="EMLAKDBModel.Store.AdvertOwner" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Category" EntityType="EMLAKDBModel.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="City" EntityType="EMLAKDBModel.Store.City" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="County" EntityType="EMLAKDBModel.Store.County" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CurrencyType" EntityType="EMLAKDBModel.Store.CurrencyType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EnvironmentFeatures" EntityType="EMLAKDBModel.Store.EnvironmentFeatures" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ExteriorFeatures" EntityType="EMLAKDBModel.Store.ExteriorFeatures" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HeatingType" EntityType="EMLAKDBModel.Store.HeatingType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InternalFeatures" EntityType="EMLAKDBModel.Store.InternalFeatures" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Picture" EntityType="EMLAKDBModel.Store.Picture" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Quarter" EntityType="EMLAKDBModel.Store.Quarter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RoomCount" EntityType="EMLAKDBModel.Store.RoomCount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StructureCondition" EntityType="EMLAKDBModel.Store.StructureCondition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StructureType" EntityType="EMLAKDBModel.Store.StructureType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SuitableCondition" EntityType="EMLAKDBModel.Store.SuitableCondition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_pk" EntityType="EMLAKDBModel.Store.tbl_pk" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbl_semt" EntityType="EMLAKDBModel.Store.tbl_semt" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="EMLAKDBModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserStatus" EntityType="EMLAKDBModel.Store.UserStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Variety" EntityType="EMLAKDBModel.Store.Variety" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Advert_Category" Association="EMLAKDBModel.Store.FK_Advert_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Advert" EntitySet="Advert" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Advert_Quarter" Association="EMLAKDBModel.Store.FK_Advert_Quarter">
+      <End Role="Quarter" EntitySet="Quarter" />
+      <End Role="Advert" EntitySet="Advert" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Advert_User" Association="EMLAKDBModel.Store.FK_Advert_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Advert" EntitySet="Advert" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Advert_Variety" Association="EMLAKDBModel.Store.FK_Advert_Variety">
+      <End Role="Variety" EntitySet="Variety" />
+      <End Role="Advert" EntitySet="Advert" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdvertEnvironmentFeature_Advert" Association="EMLAKDBModel.Store.FK_AdvertEnvironmentFeature_Advert">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="AdvertEnvironmentFeature" EntitySet="AdvertEnvironmentFeature" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdvertExteriorFeature_Advert" Association="EMLAKDBModel.Store.FK_AdvertExteriorFeature_Advert">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="AdvertExteriorFeature" EntitySet="AdvertExteriorFeature" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdvertInternalFeature_Advert" Association="EMLAKDBModel.Store.FK_AdvertInternalFeature_Advert">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="AdvertInternalFeature" EntitySet="AdvertInternalFeature" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdvertOwner_Advert" Association="EMLAKDBModel.Store.FK_AdvertOwner_Advert">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="AdvertOwner" EntitySet="AdvertOwner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_County_City" Association="EMLAKDBModel.Store.FK_County_City">
+      <End Role="City" EntitySet="City" />
+      <End Role="County" EntitySet="County" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Picture_Advert" Association="EMLAKDBModel.Store.FK_Picture_Advert">
+      <End Role="Advert" EntitySet="Advert" />
+      <End Role="Picture" EntitySet="Picture" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_semt_County" Association="EMLAKDBModel.Store.FK_tbl_semt_County">
+      <End Role="County" EntitySet="County" />
+      <End Role="tbl_semt" EntitySet="tbl_semt" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Advert">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+    </Key>
+    <Property Name="AdvertID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nchar" Nullable="false" MaxLength="100" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="SquareMeters" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="QuarterID" Type="int" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="VarietyID" Type="int" Nullable="false" />
+    <Property Name="CurrencyTypeID" Type="int" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="AdvertDetail">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+    </Key>
+    <Property Name="AdvertID" Type="int" Nullable="false" />
+    <Property Name="RoomCountID" Type="int" />
+    <Property Name="HallCount" Type="int" />
+    <Property Name="BathCount" Type="smallint" />
+    <Property Name="BuildingAge" Type="int" />
+    <Property Name="Floors" Type="int" />
+    <Property Name="OnWhichFloor" Type="int" />
+    <Property Name="HeatingTypeID" Type="int" />
+    <Property Name="StructureConditionID" Type="int" />
+    <Property Name="StructureTypeID" Type="int" />
+    <Property Name="UserStatusID" Type="int" />
+    <Property Name="IsFurnished" Type="int" />
+    <Property Name="IsAvailableCredit" Type="int" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Location" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="AdvertEnvironmentFeature">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EnvironmentFeatureID" Type="int" />
+    <Property Name="AdvertID" Type="int" />
+  </EntityType>
+  <EntityType Name="AdvertExteriorFeature">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdvertID" Type="int" Nullable="false" />
+    <Property Name="ExteriorFeatureID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdvertInternalFeature">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdvertID" Type="int" Nullable="false" />
+    <Property Name="InternalFeatureID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdvertOwner">
+    <Key>
+      <PropertyRef Name="AdvertID" />
+    </Key>
+    <Property Name="AdvertID" Type="int" Nullable="false" />
+    <Property Name="AdvertOwnerName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AdvertOwnerSurname" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Phone1" Type="char" Nullable="false" MaxLength="13" />
+    <Property Name="Phone2" Type="char" MaxLength="13" />
+    <Property Name="E-mail" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="County">
+    <Key>
+      <PropertyRef Name="CountyID" />
+    </Key>
+    <Property Name="CountyID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CityID" Type="smallint" />
+  </EntityType>
+  <EntityType Name="CurrencyType">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CurrencyName" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="EnvironmentFeatures">
+    <Key>
+      <PropertyRef Name="EnvironmentFeatureID" />
+    </Key>
+    <Property Name="EnvironmentFeatureID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EnvironmentFeatureName" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="ExteriorFeatures">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FeatureName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HeatingType">
+    <Key>
+      <PropertyRef Name="HeatingID" />
+    </Key>
+    <Property Name="HeatingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="HetingName" Type="nvarchar" Nullable="false" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="InternalFeatures">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FeatureName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Picture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PictureName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PictureWay" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsVitrin" Type="smallint" />
+    <Property Name="AdvertID" Type="int" />
+  </EntityType>
+  <EntityType Name="Quarter">
+    <Key>
+      <PropertyRef Name="QuarterID" />
+    </Key>
+    <Property Name="QuarterID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SemtID" Type="smallint" Nullable="false" />
+    <Property Name="mahalle_ad" Type="nvarchar" MaxLength="40" />
+    <Property Name="pk_id" Type="smallint" />
+  </EntityType>
+  <EntityType Name="RoomCount">
+    <Key>
+      <PropertyRef Name="RoomCountID" />
+    </Key>
+    <Property Name="RoomCountID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoomCountName" Type="nchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="StructureCondition">
+    <Key>
+      <PropertyRef Name="StructureConditionID" />
+    </Key>
+    <Property Name="StructureConditionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StructureConditionName" Type="nvarchar" Nullable="false" MaxLength="53" />
+  </EntityType>
+  <EntityType Name="StructureType">
+    <Key>
+      <PropertyRef Name="StructureID" />
+    </Key>
+    <Property Name="StructureID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StructureName" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="SuitableCondition">
+    <Key>
+      <PropertyRef Name="SuitableID" />
+    </Key>
+    <Property Name="SuitableID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SuitableName" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbl_pk">
+    <Key>
+      <PropertyRef Name="pk_id" />
+    </Key>
+    <Property Name="pk_id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="kod" Type="char" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="tbl_semt">
+    <Key>
+      <PropertyRef Name="SemtID" />
+    </Key>
+    <Property Name="SemtID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountyID" Type="smallint" Nullable="false" />
+    <Property Name="SemtAdi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="UserStatus">
+    <Key>
+      <PropertyRef Name="UserStatusID" />
+    </Key>
+    <Property Name="UserStatusID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserStatusName" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Variety">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VarietyName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Advert_Category">
+    <End Role="Category" Type="EMLAKDBModel.Store.Category" Multiplicity="1" />
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Advert">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Advert_Quarter">
+    <End Role="Quarter" Type="EMLAKDBModel.Store.Quarter" Multiplicity="1" />
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Quarter">
+        <PropertyRef Name="QuarterID" />
+      </Principal>
+      <Dependent Role="Advert">
+        <PropertyRef Name="QuarterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Advert_User">
+    <End Role="User" Type="EMLAKDBModel.Store.User" Multiplicity="1" />
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Advert">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Advert_Variety">
+    <End Role="Variety" Type="EMLAKDBModel.Store.Variety" Multiplicity="1" />
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Variety">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Advert">
+        <PropertyRef Name="VarietyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdvertEnvironmentFeature_Advert">
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="0..1" />
+    <End Role="AdvertEnvironmentFeature" Type="EMLAKDBModel.Store.AdvertEnvironmentFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="AdvertEnvironmentFeature">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdvertExteriorFeature_Advert">
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="1" />
+    <End Role="AdvertExteriorFeature" Type="EMLAKDBModel.Store.AdvertExteriorFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="AdvertExteriorFeature">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdvertInternalFeature_Advert">
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="1" />
+    <End Role="AdvertInternalFeature" Type="EMLAKDBModel.Store.AdvertInternalFeature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="AdvertInternalFeature">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdvertOwner_Advert">
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="1" />
+    <End Role="AdvertOwner" Type="EMLAKDBModel.Store.AdvertOwner" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="AdvertOwner">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_County_City">
+    <End Role="City" Type="EMLAKDBModel.Store.City" Multiplicity="0..1" />
+    <End Role="County" Type="EMLAKDBModel.Store.County" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="County">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Picture_Advert">
+    <End Role="Advert" Type="EMLAKDBModel.Store.Advert" Multiplicity="0..1" />
+    <End Role="Picture" Type="EMLAKDBModel.Store.Picture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Advert">
+        <PropertyRef Name="AdvertID" />
+      </Principal>
+      <Dependent Role="Picture">
+        <PropertyRef Name="AdvertID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_semt_County">
+    <End Role="County" Type="EMLAKDBModel.Store.County" Multiplicity="1" />
+    <End Role="tbl_semt" Type="EMLAKDBModel.Store.tbl_semt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="County">
+        <PropertyRef Name="CountyID" />
+      </Principal>
+      <Dependent Role="tbl_semt">
+        <PropertyRef Name="CountyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="ins_Advert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Title" Type="nchar" Mode="In" />
+    <Parameter Name="Price" Type="money" Mode="In" />
+    <Parameter Name="SquareMeters" Type="int" Mode="In" />
+    <Parameter Name="CreationDate" Type="datetime" Mode="In" />
+    <Parameter Name="QuarterID" Type="int" Mode="In" />
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+    <Parameter Name="VarietyID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ins_AdvertDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AdvertID" Type="int" Mode="In" />
+    <Parameter Name="RoomCount" Type="int" Mode="In" />
+    <Parameter Name="HallCount" Type="int" Mode="In" />
+    <Parameter Name="BathCount" Type="smallint" Mode="In" />
+    <Parameter Name="BuildingAge" Type="int" Mode="In" />
+    <Parameter Name="Floors" Type="int" Mode="In" />
+    <Parameter Name="OnWhichFloor" Type="int" Mode="In" />
+    <Parameter Name="Heating" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsFurnished" Type="smallint" Mode="In" />
+    <Parameter Name="IsAvailableCredit" Type="smallint" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Location" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ins_AdvertExteriorFeature" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AdvertID" Type="int" Mode="In" />
+    <Parameter Name="ExteriorFeatureID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ins_InternalFeature" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AdvertID" Type="int" Mode="In" />
+    <Parameter Name="InternalFeatureID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ins_Picture" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PictureName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PictureWay" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsVitrin" Type="smallint" Mode="In" />
+    <Parameter Name="AdvertID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sel_Advert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AdvertID" Type="int" Mode="In" />
+  </Function>
+</Schema>

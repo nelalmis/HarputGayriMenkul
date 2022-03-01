@@ -1,0 +1,15 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+wpestatetheme.org	TRUE	/wp-content/plugins	FALSE	1999999999	wordpress_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/wp-content/plugins	FALSE	1999999999	wordpress_sec_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/wp-admin	FALSE	1999999999	wordpress_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/wp-admin	FALSE	1999999999	wordpress_sec_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+wpestatetheme.org	TRUE	/	FALSE	1999999999	wordpress_logged_in_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/	FALSE	1999999999	wordpress_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/	FALSE	1999999999	wordpress_sec_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/	FALSE	1999999999	wordpressuser_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/	FALSE	1999999999	wordpresspass_d314abd126c318ba7cfbcb4bb3122386	+
+wpestatetheme.org	TRUE	/	FALSE	1999999999	dsidx-visitor-results-views	10
+wpestatetheme.org	TRUE	/	FALSE	1999999999	dsidx-visitor-details-views	100
+

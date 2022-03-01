@@ -1,0 +1,204 @@
+﻿@model IEnumerable<HarputGayriMenkul.Models.sel_Advert_Result>
+
+@{
+    ViewBag.Title = "AdvertList";
+    Layout = "~/Views/Shared/_AdminAnasayfaLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<title>İlanlar</title>
+
+
+</head>
+
+<body >
+    <div style="background-color:white">
+        <form action="AdvertList"> 
+         <div class="row">
+                         <div class="col-md-9" style="float:left;margin-left:10px; margin-top:10px">
+                             <div class="form-group">
+                                <input type="text" class="form-control" name="SearchValue" placeholder="İlan No">
+                                 
+                             </div>
+                         </div>
+
+                          <div class="col-md-1">
+                             <div class="form-group">
+                                  <div class="col-md-offset-4 col-md-12">
+                                       <div class="form-actions" style="margin-top:10px">
+                                              <button type="submit" class="btn green">Ara</button>
+                                             
+                                         </div>
+                                 </div> 
+                                
+                             </div>
+                         </div>
+            </div>
+          </form>
+
+           
+            
+          @*  <p>
+                @Html.ActionLink("Create New", "Create")
+            </p>*@
+        
+        
+        <div> 
+
+        </div>
+          <div class="portlet box blue-madison">
+							<div class="portlet-title">
+								<div class="caption">
+									<i class="fa fa-globe"></i>İLANLAR
+								</div>
+								<div class="tools">
+									<a href="javascript:;" class="reload">
+									</a>
+									<a href="javascript:;" class="remove">
+									</a>
+								</div>
+							</div>
+							<div class="portlet-body">
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="sample_3_info" id="sample_3">
+                                    <thead>
+                                        <tr role="row">
+
+                                         <th class="table-checkbox sorting_disabled" rowspan="1" colspan="1" style="width: 14px;" aria-label="">
+                                              İLAN NO
+                                         </th>
+                                             <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 102px;" aria-label=" CSS grade : activate to sort column ascending">
+                                           @* @Html.DisplayNameFor(model => model.KategoriAdı)*@
+                                              KATEGORİ
+
+                                        </th>
+                                         <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 192px;" aria-label=" Platform(s) : activate to sort column ascending">
+                                            @* @Html.DisplayNameFor(model => model.Başlık)*@
+                                             BAŞLIK
+                                        </th>
+                                         <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 205px;" aria-label=" Browser : activate to sort column ascending">
+                                           @* @Html.DisplayNameFor(model => model.Fiyat)*@
+                                             FİYAT
+                                        </th>
+
+                                            <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 102px;" aria-label=" CSS grade : activate to sort column ascending">
+                                              @* @Html.DisplayNameFor(model => model.MetreKare)*@
+                                            METRE KARE
+                                        </th>
+
+                                          <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 146px;" aria-label=" Engine version : activate to sort column ascending">
+                                            @*@Html.DisplayNameFor(model => model.Lokasyon)*@
+                                              LOKASYON
+                                        </th>
+                                        <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 102px;" aria-label=" CSS grade : activate to sort column ascending">
+                                              ÇEŞİT
+
+                                        </th>
+
+                                         <th class="sorting_asc" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 172px;" aria-sort="ascending" aria-label=" Rendering engine : activate to sort column ascending">
+                                             @* @Html.DisplayNameFor(model => model.İlanTarihi)*@
+                                             İLAN TARİHİ
+                                         </th>
+                                      
+
+                                       
+
+                                       
+
+@*                                      <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 102px;" aria-label=" CSS grade : activate to sort column ascending">
+                                            @Html.DisplayNameFor(model => model.Şehir)
+
+                                        </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 102px;" aria-label=" CSS grade : activate to sort column ascending">
+                                            @Html.DisplayNameFor(model => model.İlçe)
+
+                                        </th>
+                                            <th class="sorting" tabindex="0" aria-controls="sample_3" rowspan="1" colspan="1" style="width: 102px;" aria-label=" CSS grade : activate to sort column ascending">
+                                               @Html.DisplayNameFor(model => model.Semt)
+
+                                        </th>*@
+                                         
+                                       
+                                        
+                                    </tr>
+                                 </thead>
+                                    <tbody>
+                                        @foreach (var item in @Model) {
+                                            <tr class="odd" role="row">
+                                               
+                                                <td>
+                                                   <b style="color:red"> @Html.DisplayFor(modelItem => item.İlanID)</b>
+                                                </td>
+                                                  <td>
+                                                    @Html.DisplayFor(modelItem => item.KategoriAdı)
+                                                </td>
+                                                 <td>
+                                                    @Html.DisplayFor(modelItem => item.Başlık)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Fiyat)
+                                                </td>
+                                                 <td>
+                                                    @Html.DisplayFor(modelItem => item.MetreKare)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Şehir)/@Html.DisplayFor(modelItem => item.İlçe) 
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Çeşit)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.İlanTarihi)
+                                                </td>
+                                                
+                                               
+                                                
+                                             @* 
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Şehir)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.İlçe)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Semt)
+                                                </td>*@
+                                               
+                                                
+                                                <td>
+                                                    @Html.ActionLink("Edit", "Edit", new { id=item.İlanID}) |
+                                                    @Html.ActionLink("Details", "Details", new {  id=item.İlanID  }) |
+                                                    @Html.ActionLink("Sil", "Delete", new {  AdvertID=item.İlanID })
+                                                </td>
+                                            </tr>
+                                         }
+                                    </tbody>
+                                </table>
+                                </div>
+                      <div class="row">
+
+                          <div class="col-md-5 col-sm-12">
+                             <div id="sample_3_info" class="dataTables_info" role="status" aria-live="polite">
+
+                              @Model.Count() adet kayıt bulundu
+
+                             </div>
+
+                          </div>
+                    <div class="col-md-7 col-sm-12">
+
+                         <div id="sample_3_paginate" class="dataTables_paginate paging_simple_numbers"></div>
+
+                            </div>
+
+                    </div>
+              </div>
+        
+        </div>
+
+
+    
+</body>
+</html>

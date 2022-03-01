@@ -1,0 +1,198 @@
+﻿@model HarputGayriMenkul.Models.sel_Advert_Result
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_AdminAnasayfaLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+    <title>İlanlar</title>
+    @section Head{
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="~/Content/assets/global/plugins/select2/select2.css"/>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME STYLES -->
+<link href="~/Content/assets/global/css/components.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/admin/layout2/css/layout.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="~/Content/assets/admin/layout2/css/themes/default.css" rel="stylesheet" type="text/css"/>
+<link href="~/Content/assets/admin/layout2/css/custom.css" rel="stylesheet" type="text/css"/>
+    }
+
+</head>
+<body>
+
+
+    <h2>Delete</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <fieldset>
+        <legend></legend>
+
+        <div class="tab-pane" id="tab4">
+            <h3 class="block">İlan Bilgileri</h3>
+            <h4 class="form-section">İlan</h4>
+            <div class="form-group">
+                <label class="control-label col-md-4">İlan No</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.İlanID)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">İlan Başlığı</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Başlık)
+
+                </div>
+            </div>
+            <h4 class="form-section">Profile</h4>
+            <div class="form-group">
+                <label class="control-label col-md-4">Kategori</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.KategoriAdı)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Çeşit</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Çeşit)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Dayalı Döşeli mi</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.DayalıDöseliMi)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Fiyat</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Fiyat)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Isınma Şekli</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.IsınmaŞekli)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Kat Sayısı</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.KatSayısı)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Kaçıncı Kat</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.KaçıncıKat)
+
+                </div>
+            </div>
+            <h4 class="form-section">Billing</h4>
+            <<div class="form-group">
+                <label class="control-label col-md-4">Metre Kare</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.MetreKare)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Banyo Sayısı</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.BanyoSayısı)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Bina Yaşı</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.BinaYaşı)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Krediye Uygun Mu</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.KrediyeUygunMu)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">İlan Tarihi</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.İlanTarihi)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Şehir</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Şehir)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">İlçe</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.İlçe)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Semt</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Semt)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Mahalle</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Mahalle)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-4">Lokasyon</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Lokasyon)
+
+                </div>
+            </div>
+             <div class="form-group">
+                <label class="control-label col-md-4">Açıklama</label>
+                <div class="col-md-4">
+                    @Html.DisplayFor(model => model.Açıklama)
+
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    @using (Html.BeginForm())
+    {
+        <p>
+            <input type="submit" value="Delete" class="btn btn-default" />
+            |
+             @Html.ActionLink("İlan Listesine Geri Dön", "AdvertList")
+        </p>
+    }
+</body>
+</html>
